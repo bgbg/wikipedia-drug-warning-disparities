@@ -1,0 +1,7 @@
+language,topic,n_pairs,n_nonzero_diffs,statistic,pvalue
+he,g6pd,8,4,2.0,0.5
+he,teratogenicity,8,3,0.0,0.25
+ar,g6pd,8,4,0.0,0.125
+ar,teratogenicity,8,2,0.0,0.5
+ru,g6pd,8,5,0.0,0.0625
+ru,teratogenicity,8,3,0.0,0.25

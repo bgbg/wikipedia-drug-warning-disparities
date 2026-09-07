@@ -1,0 +1,41 @@
+drug,cpic_risk,pregnancy_risk,qt_risk,pgx_risk,category,wikidata_qid,en_title,he_title,ar_title,ru_title
+rasburicase,Contraindicated,,,,g6pd_only,Q3088229,Rasburicase,,راسبوريكاز,
+methylene_blue,Contraindicated,,,,g6pd_only,Q422134,Methylene blue,מתילן בלו,أزرق الميثيلين,Метиленовый синий
+pegloticase,Contraindicated,,,,g6pd_only,Q7160794,Pegloticase,פגלוטיקאז,بغلوتيكاز,
+dapsone,Avoid in deficient patients,,,,g6pd_only,Q422226,Dapsone,דפסון,دابسون,Дапсон
+nitrofurantoin,Use with caution,,,,g6pd_only,Q422669,Nitrofurantoin,ניטרופוראנטואין,نيتروفورانتوين,Нитрофурантоин
+phenazopyridine,Use with caution,,,,g6pd_only,Q3114549,Phenazopyridine,פנאזופירידין,فينازوبيريدين,
+primaquine,Contraindicated,,,,g6pd_only,Q419834,Primaquine,פרימקווין,بريماكين,
+toluidine_blue,Contraindicated,,,,g6pd_only,Q80868,Toluidine blue,,,
+isotretinoin,,Contraindicated (iPLEDGE/REMS),,,teratogen_only,Q287029,Isotretinoin,איזוטרטינואין,آيزوتريتينوين,Изотретиноин
+valproic_acid,,Contraindicated (FDA black box),,,teratogen_only,Q240642,Valproate,חומצה ולפרואית,فالبروات,Вальпроевая кислота
+methotrexate,,Contraindicated (PLLR),,,teratogen_only,Q422232,Methotrexate,מתוטרקסט,ميثوتركسيت,Метотрексат
+warfarin,,Contraindicated (1st tri; black box 2nd/3rd),,,teratogen_only,Q113368879,Warfarin,וארפרין,وارفارين,Варфарин
+thalidomide,,Contraindicated (REMS),,,teratogen_only,Q203174,Thalidomide,תלידומיד,ثاليدوميد,Талидомид
+phenytoin,,Contraindicated (fetal hydantoin syndrome),,"HLA-B*15:02 SJS/TEN; CYP2C9 (CPIC, FDA boxed)",teratogen_only,Q410400,Phenytoin,פניטואין,فينيتوين,Фенитоин
+mycophenolate,,Contraindicated (REMS),,,teratogen_only,Q420553,Mycophenolic acid,מיקופנולאט,حمض الميكوفينوليك,
+methimazole,,Contraindicated (methimazole embryopathy),,,teratogen_only,Q419663,Thiamazole,,ميثيمازول,
+amoxicillin,,,,,control,Q201928,Amoxicillin,אמוקסיצילין,أموكسيسيلين,Амоксициллин
+atorvastatin,,,,,control,Q668093,Atorvastatin,,أتورفاستاتين,Аторвастатин
+omeprazole,,,,,control,Q422210,Omeprazole,אומפרזול,أوميبرازول,Омепразол
+doxylamine,,,,,control,Q423390,Doxylamine,דוקסילאמין,دوكسيلامين,Доксиламин
+pyridoxine,,,,,control,Q423746,Pyridoxine,,بيريدوكسين,Пиридоксин
+paracetamol,,,,,control,Q57055,Paracetamol,פרצטמול,باراسيتامول,Парацетамол
+loratadine,,,,,control,Q424049,Loratadine,לוראטדין,لوراتادين,Лоратадин
+famotidine,,,,,control,Q411159,Famotidine,,فاموتيدين,Фамотидин
+loperamide,,,,,control,Q423751,Loperamide,לופראמיד,لوبيراميد,Лоперамид
+citalopram,,,Known risk of TdP (CredibleMeds),,qt_only,Q409672,Citalopram,ציטאלופרם,سيتالوبرام,Циталопрам
+azithromycin,,,Known risk of TdP (CredibleMeds),,qt_only,Q165399,Azithromycin,אזיתרומיצין,أزيثرومايسين,Азитромицин
+levofloxacin,,,Known risk of TdP (CredibleMeds),,qt_only,Q424193,Levofloxacin,לבופלוקסצין,ليفوفلوكساسين,Левофлоксацин
+ondansetron,,,Known risk of TdP (CredibleMeds),,qt_only,Q410011,Ondansetron,אונדנסטרון,أوندانسيترون,Ондансетрон
+haloperidol,,,Known risk of TdP (CredibleMeds),,qt_only,Q251347,Haloperidol,הלופרידול,هالوبيريدول,Галоперидол
+methadone,,,Known risk of TdP (CredibleMeds),,qt_only,Q179996,Methadone,מתאדון,ميثادون,Метадон
+hydroxychloroquine,,,Known risk of TdP (CredibleMeds),,qt_only,Q421094,Hydroxychloroquine,הידרוקסיכלורוקווין,هيدروكسي كلوروكوين,Гидроксихлорохин
+domperidone,,,Known risk of TdP (CredibleMeds),,qt_only,Q424238,Domperidone,דומפרידון,دومبيريدون,Домперидон
+carbamazepine,,,,"HLA-B*15:02 SJS/TEN; HLA-A*31:01 (CPIC, FDA boxed)",pgx_only,Q410412,Carbamazepine,קארבאמזפין,كاربامازيبين,Карбамазепин
+oxcarbazepine,,,,HLA-B*15:02 SJS/TEN (CPIC),pgx_only,Q176301,Oxcarbazepine,אוקסקארבאזפין,أوكسكاربازيبين,Окскарбазепин
+lamotrigine,,,,HLA-B*15:02 SJS/TEN (CPIC),pgx_only,Q410346,Lamotrigine,למוטריג'ין,لاموتريجين,Ламотриджин
+allopurinol,,,,HLA-B*58:01 SJS/TEN/DRESS (CPIC),pgx_only,Q412486,Allopurinol,,ألوبيورينول,Аллопуринол
+abacavir,,,,"HLA-B*57:01 hypersensitivity (CPIC, FDA boxed, mandatory genotype)",pgx_only,Q304330,Abacavir,אבקוויר,أباكافير,Абакавир
+codeine,,,,"CYP2D6 UM respiratory depression (CPIC, FDA contraindicated children/breastfeeding)",pgx_only,Q174723,Codeine,קודאין,كودين,Кодеин
+tramadol,,,,CYP2D6 UM respiratory depression (CPIC),pgx_only,Q407592,Tramadol,טרמדול,ترامادول,Трамадол

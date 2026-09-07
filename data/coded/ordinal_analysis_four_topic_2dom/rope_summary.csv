@@ -1,0 +1,7 @@
+language,topic,rope_low,rope_high,prob_in_rope,prob_or_lt_low,prob_or_gt_high
+he,g6pd,0.5,2.0,0.285875,0.681625,0.0325
+he,teratogenicity,0.5,2.0,0.283875,0.68975,0.026375
+ar,g6pd,0.5,2.0,0.107,0.891375,0.001625
+ar,teratogenicity,0.5,2.0,0.3795,0.566625,0.053875
+ru,g6pd,0.5,2.0,0.0115,0.98825,0.00025
+ru,teratogenicity,0.5,2.0,0.214625,0.766375,0.019

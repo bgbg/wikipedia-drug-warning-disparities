@@ -1,0 +1,65 @@
+drug,lang,topic,code,category,cpic_risk,pregnancy_risk
+rasburicase,en,g6pd,2,g6pd_only,Contraindicated,
+rasburicase,he,g6pd,0,g6pd_only,Contraindicated,
+rasburicase,ar,g6pd,0,g6pd_only,Contraindicated,
+rasburicase,ru,g6pd,0,g6pd_only,Contraindicated,
+methylene_blue,en,g6pd,1,g6pd_only,Contraindicated,
+methylene_blue,he,g6pd,2,g6pd_only,Contraindicated,
+methylene_blue,ar,g6pd,1,g6pd_only,Contraindicated,
+methylene_blue,ru,g6pd,0,g6pd_only,Contraindicated,
+pegloticase,en,g6pd,2,g6pd_only,Contraindicated,
+pegloticase,he,g6pd,2,g6pd_only,Contraindicated,
+pegloticase,ar,g6pd,0,g6pd_only,Contraindicated,
+pegloticase,ru,g6pd,0,g6pd_only,Contraindicated,
+dapsone,en,g6pd,2,g6pd_only,Avoid in deficient patients,
+dapsone,he,g6pd,1,g6pd_only,Avoid in deficient patients,
+dapsone,ar,g6pd,1,g6pd_only,Avoid in deficient patients,
+dapsone,ru,g6pd,2,g6pd_only,Avoid in deficient patients,
+nitrofurantoin,en,g6pd,2,g6pd_only,Use with caution,
+nitrofurantoin,he,g6pd,1,g6pd_only,Use with caution,
+nitrofurantoin,ar,g6pd,2,g6pd_only,Use with caution,
+nitrofurantoin,ru,g6pd,2,g6pd_only,Use with caution,
+phenazopyridine,en,g6pd,2,g6pd_only,Use with caution,
+phenazopyridine,he,g6pd,2,g6pd_only,Use with caution,
+phenazopyridine,ar,g6pd,0,g6pd_only,Use with caution,
+phenazopyridine,ru,g6pd,0,g6pd_only,Use with caution,
+primaquine,en,g6pd,2,g6pd_only,Contraindicated,
+primaquine,he,g6pd,2,g6pd_only,Contraindicated,
+primaquine,ar,g6pd,2,g6pd_only,Contraindicated,
+primaquine,ru,g6pd,0,g6pd_only,Contraindicated,
+toluidine_blue,en,g6pd,0,g6pd_only,Contraindicated,
+toluidine_blue,he,g6pd,0,g6pd_only,Contraindicated,
+toluidine_blue,ar,g6pd,0,g6pd_only,Contraindicated,
+toluidine_blue,ru,g6pd,0,g6pd_only,Contraindicated,
+isotretinoin,en,teratogenicity,2,teratogen_only,,Contraindicated (iPLEDGE/REMS)
+isotretinoin,he,teratogenicity,2,teratogen_only,,Contraindicated (iPLEDGE/REMS)
+isotretinoin,ar,teratogenicity,1,teratogen_only,,Contraindicated (iPLEDGE/REMS)
+isotretinoin,ru,teratogenicity,2,teratogen_only,,Contraindicated (iPLEDGE/REMS)
+valproic_acid,en,teratogenicity,2,teratogen_only,,Contraindicated (FDA black box)
+valproic_acid,he,teratogenicity,2,teratogen_only,,Contraindicated (FDA black box)
+valproic_acid,ar,teratogenicity,2,teratogen_only,,Contraindicated (FDA black box)
+valproic_acid,ru,teratogenicity,2,teratogen_only,,Contraindicated (FDA black box)
+methotrexate,en,teratogenicity,2,teratogen_only,,Contraindicated (PLLR)
+methotrexate,he,teratogenicity,1,teratogen_only,,Contraindicated (PLLR)
+methotrexate,ar,teratogenicity,1,teratogen_only,,Contraindicated (PLLR)
+methotrexate,ru,teratogenicity,2,teratogen_only,,Contraindicated (PLLR)
+warfarin,en,teratogenicity,2,teratogen_only,,Contraindicated (1st tri; black box 2nd/3rd)
+warfarin,he,teratogenicity,2,teratogen_only,,Contraindicated (1st tri; black box 2nd/3rd)
+warfarin,ar,teratogenicity,2,teratogen_only,,Contraindicated (1st tri; black box 2nd/3rd)
+warfarin,ru,teratogenicity,2,teratogen_only,,Contraindicated (1st tri; black box 2nd/3rd)
+thalidomide,en,teratogenicity,2,teratogen_only,,Contraindicated (REMS)
+thalidomide,he,teratogenicity,1,teratogen_only,,Contraindicated (REMS)
+thalidomide,ar,teratogenicity,2,teratogen_only,,Contraindicated (REMS)
+thalidomide,ru,teratogenicity,1,teratogen_only,,Contraindicated (REMS)
+phenytoin,en,teratogenicity,1,teratogen_only,,Contraindicated (fetal hydantoin syndrome)
+phenytoin,he,teratogenicity,1,teratogen_only,,Contraindicated (fetal hydantoin syndrome)
+phenytoin,ar,teratogenicity,1,teratogen_only,,Contraindicated (fetal hydantoin syndrome)
+phenytoin,ru,teratogenicity,1,teratogen_only,,Contraindicated (fetal hydantoin syndrome)
+mycophenolate,en,teratogenicity,2,teratogen_only,,Contraindicated (REMS)
+mycophenolate,he,teratogenicity,2,teratogen_only,,Contraindicated (REMS)
+mycophenolate,ar,teratogenicity,2,teratogen_only,,Contraindicated (REMS)
+mycophenolate,ru,teratogenicity,0,teratogen_only,,Contraindicated (REMS)
+methimazole,en,teratogenicity,1,teratogen_only,,Contraindicated (methimazole embryopathy)
+methimazole,he,teratogenicity,0,teratogen_only,,Contraindicated (methimazole embryopathy)
+methimazole,ar,teratogenicity,1,teratogen_only,,Contraindicated (methimazole embryopathy)
+methimazole,ru,teratogenicity,0,teratogen_only,,Contraindicated (methimazole embryopathy)

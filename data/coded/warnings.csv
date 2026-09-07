@@ -1,0 +1,41 @@
+drug,lang,cpic_risk,is_control,exists,warning_code,warning_location,matched_terms
+rasburicase,en,Contraindicated,False,True,2,contraindications_section,"[""g6pd"", ""glucose-6-phosphate dehydrogenase"", ""contraindicated""]"
+rasburicase,he,Contraindicated,False,False,0,absent,[]
+rasburicase,ar,Contraindicated,False,True,0,absent,[]
+rasburicase,ru,Contraindicated,False,False,0,absent,[]
+primaquine,en,Contraindicated,False,True,2,lead,"[""g6pd"", ""glucose-6-phosphate dehydrogenase"", ""g6pd deficiency"", ""contraindicated"", ""avoid""]"
+primaquine,he,Contraindicated,False,True,1,contraindications_section,"[""g6pd"", ""חסר g6pd""]"
+primaquine,ar,Contraindicated,False,True,1,lead,"[""الغلوكوز-6-فوسفات"", ""عوز نازعة هيدروجين""]"
+primaquine,ru,Contraindicated,False,False,0,absent,[]
+methylene_blue,en,Contraindicated,False,True,1,adverse_effects_section,"[""g6pd"", ""glucose-6-phosphate dehydrogenase"", ""g6pd deficiency""]"
+methylene_blue,he,Contraindicated,False,True,1,contraindications_section,"[""g6pd"", ""מחסור ב-g6pd""]"
+methylene_blue,ar,Contraindicated,False,True,0,absent,[]
+methylene_blue,ru,Contraindicated,False,True,0,absent,[]
+pegloticase,en,Contraindicated,False,True,2,adverse_effects_section,"[""glucose-6-phosphate dehydrogenase"", ""contraindicated""]"
+pegloticase,he,Contraindicated,False,True,1,adverse_effects_section,"[""g6pd"", ""גלוקוז-6-פוספט דהידרוגנאז""]"
+pegloticase,ar,Contraindicated,False,True,0,absent,[]
+pegloticase,ru,Contraindicated,False,False,0,absent,[]
+dapsone,en,Avoid in deficient patients,False,True,1,lead,"[""g6pd"", ""glucose-6-phosphate dehydrogenase"", ""g6pd deficiency""]"
+dapsone,he,Avoid in deficient patients,False,True,1,lead,"[""g6pd""]"
+dapsone,ar,Avoid in deficient patients,False,True,1,adverse_effects_section,"[""g6pd""]"
+dapsone,ru,Avoid in deficient patients,False,True,0,absent,[]
+nitrofurantoin,en,Use with caution,False,True,2,contraindications_section,"[""g6pd"", ""glucose-6-phosphate dehydrogenase"", ""contraindicated"", ""not recommended""]"
+nitrofurantoin,he,Use with caution,False,True,1,adverse_effects_section,"[""g6pd""]"
+nitrofurantoin,ar,Use with caution,False,True,1,contraindications_section,"[""g6pd""]"
+nitrofurantoin,ru,Use with caution,False,True,0,absent,[]
+phenazopyridine,en,Use with caution,False,True,2,adverse_effects_section,"[""g6pd"", ""glucose-6-phosphate dehydrogenase"", ""g6pd deficiency"", ""avoid""]"
+phenazopyridine,he,Use with caution,False,True,1,contraindications_section,"[""g6pd""]"
+phenazopyridine,ar,Use with caution,False,True,0,absent,[]
+phenazopyridine,ru,Use with caution,False,False,0,absent,[]
+amoxicillin,en,(control),True,True,0,absent,[]
+amoxicillin,he,(control),True,True,0,absent,[]
+amoxicillin,ar,(control),True,True,0,absent,[]
+amoxicillin,ru,(control),True,True,0,absent,[]
+atorvastatin,en,(control),True,True,0,absent,[]
+atorvastatin,he,(control),True,False,0,absent,[]
+atorvastatin,ar,(control),True,True,0,absent,[]
+atorvastatin,ru,(control),True,True,0,absent,[]
+omeprazole,en,(control),True,True,0,absent,[]
+omeprazole,he,(control),True,True,0,absent,[]
+omeprazole,ar,(control),True,True,0,absent,[]
+omeprazole,ru,(control),True,True,0,absent,[]

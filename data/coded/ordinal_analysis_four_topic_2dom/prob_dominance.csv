@@ -1,0 +1,7 @@
+language,topic,prob_dominance
+he,g6pd,0.87725
+he,teratogenicity,0.89
+ar,g6pd,0.98125
+ar,teratogenicity,0.8165
+ru,g6pd,0.998125
+ru,teratogenicity,0.91525

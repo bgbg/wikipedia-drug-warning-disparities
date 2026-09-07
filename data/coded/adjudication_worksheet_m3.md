@@ -1,0 +1,196 @@
+# M3 adjudication worksheet (QT + PGx-SCAR)
+
+32 LLM disagreements for pharmacist (Maya) adjudication. Models: gpt-4o, gemini-2.5-flash, grok-4.3. Fill **human_code** (0/1/2).
+
+## loratadine / en / qt  (codes: 0,1,0)
+- model1=0: The article explicitly states that loratadine does not prolong the QT interval or cause Torsades de Pointes.
+- model2=1: The article mentions that increased drug levels did not prolong the QTc interval, which can lead to Torsades de Pointes, indicating awareness of this risk without a direct clinical instruction for lor
+- model3=0: The article mentions QTc and Torsades only to state that loratadine does not prolong QTc or cause the arrhythmia, so no warning of risk is present.
+- **human_code: __**
+
+## loratadine / ru / qt  (codes: 0,1,0)
+- model1=0: The article does not mention QT prolongation, Torsades, or any cardiac rhythm risk.
+- model2=1: The article mentions 'аритмия' (arrhythmia) and 'увеличение частоты сердечных сокращений' (increased heart rate) as side effects, which are related to heart rhythm, but does not specifically mention Q
+- model3=0: No mention of QT prolongation, Torsades de Pointes, or any QT-related arrhythmia risk appears in the article.
+- **human_code: __**
+
+## citalopram / ar / qt  (codes: 2,0,0)
+- model1=2: The contraindications section states citalopram is contraindicated in patients with congenital long QT syndrome and should not be combined with other QT-prolonging medications due to Torsades risk.
+- model2=0: The article, written in Arabic, does not mention QT prolongation, Torsades de Pointes, or any related cardiac rhythm disturbances.
+- model3=0: The Arabic article lists side effects and warnings but contains no mention of QT prolongation, Torsades, or cardiac arrhythmia risk.
+- **human_code: __**
+
+## azithromycin / en / qt  (codes: 2,1,1)
+- model1=2: The article mentions QT prolongation and Torsades risk with explicit FDA warning and avoidance directive for patients with QT abnormalities or electrolyte imbalances.
+- model2=1: The 'Adverse effects' section states that azithromycin causes QT prolongation that may cause life-threatening arrhythmias such as torsades de pointes, and mentions an FDA warning about this risk, but 
+- model3=1: QT prolongation and torsades de pointes risk (including FDA warning) are described in the lead and adverse-effects section as a side effect, but the article contains no explicit directive such as 'con
+- **human_code: __**
+
+## azithromycin / he / qt  (codes: 1,2,1)
+- model1=1: QT prolongation and arrhythmia are mentioned as rare side effects, but no explicit directive is given to avoid or monitor.
+- model2=2: The article explicitly states that azithromycin should not be combined with other QT-prolonging medications due to the risk of QT prolongation, and lists 'תרופות המאריכות QT' (QT-prolonging drugs) und
+- model3=1: QT prolongation is explicitly listed under side effects and noted as an interaction risk, but no contraindication or avoidance directive is given.
+- **human_code: __**
+
+## azithromycin / ar / qt  (codes: 1,2,1)
+- model1=1: The article mentions the risk of QT interval prolongation and cardiac rhythm disturbances in the context of an FDA warning, but does not provide explicit clinical action instructions.
+- model2=2: The article states that the FDA issued a medical warning due to the drug's potential to cause abnormal changes in the heart's electrical activity, prolonging the QT interval and leading to a rare hear
+- model3=1: QT-interval prolongation and associated rare arrhythmia risk are described in the lead paragraph via the FDA warning, but no avoidance/monitoring directive or contraindication is stated.
+- **human_code: __**
+
+## azithromycin / ru / qt  (codes: 2,2,1)
+- model1=2: The article includes an FDA warning about QT prolongation and Torsades risk, advising caution in patients with pre-existing conditions.
+- model2=2: The article states that the FDA issued a warning that azithromycin 'may cause abnormal changes in the electrical activity of the heart that may lead to a potentially fatal heart rhythm disorder' and t
+- model3=1: QT prolongation and fatal arrhythmia risk (including in patients with existing QT prolongation) are described via the FDA warning inside the side-effects section, but the article itself contains no ex
+- **human_code: __**
+
+## methadone / ru / qt  (codes: 2,2,1)
+- model1=2: The article explicitly mentions QT interval prolongation and provides directives for cautious use in patients at risk of arrhythmia.
+- model2=2: The article explicitly states that methadone causes QT prolongation, which can lead to dangerous arrhythmias, and provides directives for careful monitoring and assessment of risk factors in patients.
+- model3=1: QT-interval prolongation and arrhythmia risk are described in a dedicated subsection under side effects, with cautionary language but no contraindication or avoidance directive.
+- **human_code: __**
+
+## hydroxychloroquine / en / qt  (codes: 2,2,1)
+- model1=2: The article mentions QT interval prolongation as an adverse effect and provides a directive to avoid concurrent use with other QT-prolonging drugs due to the risk of serious arrhythmias.
+- model2=2: The article mentions QT interval prolongation as an adverse effect and later, in the interactions section, explicitly states that hydroxychloroquine prolongs the QT interval and may increase the risk 
+- model3=1: QT interval prolongation is listed as an adverse effect and noted in interactions as increasing arrhythmia risk, but the article contains no explicit directive such as 'contraindicated', 'avoid', or a
+- **human_code: __**
+
+## hydroxychloroquine / ar / qt  (codes: 2,2,0)
+- model1=2: The article mentions that hydroxychloroquine can cause serious heart problems, including QT prolongation, especially in late stages of COVID-19, and advises against its use in such cases.
+- model2=2: The article mentions that the heart can be exposed to side effects in later stages of COVID-19, and that the FDA cautioned against its use outside of hospitals due to heart rhythm problems.
+- model3=0: The article mentions general 'heart problems' and 'serious cardiac disorders' but contains no explicit reference to QT prolongation, Torsades de Pointes, or ventricular arrhythmia risk.
+- **human_code: __**
+
+## hydroxychloroquine / ru / qt  (codes: 2,2,1)
+- model1=2: The contraindications section advises against use with QT-prolonging drugs due to the risk of serious ventricular arrhythmias.
+- model2=2: The 'Лекарственное взаимодействие' (Drug Interactions) section explicitly states that hydroxychloroquine prolongs the QT interval and can increase the risk of serious ventricular arrhythmias when co-a
+- model3=1: QT-interval prolongation and ventricular arrhythmia risk are mentioned in the drug-interactions section, but no avoidance directive or contraindication is stated.
+- **human_code: __**
+
+## domperidone / ru / qt  (codes: 2,1,2)
+- model1=2: The article mentions that domperidone can induce Torsades de Pointes and advises avoiding co-administration with bosutinib due to this risk.
+- model2=1: The article mentions that domperidone can lead to QT interval prolongation and induce Torsades de Pointes, but only advises avoiding co-administration with bosutinib, not a general directive for all p
+- model3=2: The interactions section explicitly states domperidone can induce torsade de pointes and directs to avoid co-administration with bosutinib.
+- **human_code: __**
+
+## phenytoin / ru / pgx_scar  (codes: 0,1,0)
+- model1=0: The article does not mention any HLA-linked severe skin reaction or CYP2D6 ultrarapid-metabolizer toxicity.
+- model2=1: The article mentions that severe allergic reactions, including Stevens-Johnson syndrome, are rare but can occur, and that the drug should be discontinued if a rash appears, but it does not link these 
+- model3=0: Article mentions Stevens-Johnson syndrome as a rare hypersensitivity reaction but provides no HLA allele association or CYP2D6 ultrarapid-metabolizer warning.
+- **human_code: __**
+
+## atorvastatin / en / pgx_scar  (codes: 0,1,0)
+- model1=0: The article does not mention any HLA-linked severe skin reaction or CYP2D6 ultrarapid-metabolizer opioid toxicity.
+- model2=1: The article mentions that 'Several genetic polymorphisms may be linked to an increase in statin-related side effects with single nucleotide polymorphisms (SNPs) in the SLCO1B1 gene showing a 45 fold h
+- model3=0: The article contains no mention of HLA-linked severe cutaneous reactions or CYP2D6 ultrarapid-metabolizer opioid toxicity.
+- **human_code: __**
+
+## omeprazole / en / pgx_scar  (codes: 0,1,0)
+- model1=0: The article does not mention any HLA-linked severe skin reaction or CYP2D6 ultrarapid-metabolizer opioid toxicity.
+- model2=1: The article mentions that CYP2C19 metabolism status can influence omeprazole's effectiveness and suggests that PPI treatment should be tailored according to CYP2C19 metabolism status, but does not exp
+- model3=0: The article discusses CYP2C19 pharmacogenomics for dosing but contains no HLA-linked SJS/TEN/DRESS warning and no CYP2D6 ultrarapid-metabolizer opioid toxicity.
+- **human_code: __**
+
+## paracetamol / en / pgx_scar  (codes: 0,1,0)
+- model1=0: The article does not mention any pharmacogenetic severe adverse reaction risks related to HLA alleles or CYP2D6 ultrarapid metabolizers.
+- model2=1: The article mentions that the FDA warns of rare but serious skin reactions like Stevens-Johnson syndrome and toxic epidermal necrolysis with acetaminophen, but does not link them to a genetic factor o
+- model3=0: The article mentions rare SJS/TEN skin reactions but contains no HLA allele association and no CYP2D6 ultrarapid-metabolizer opioid toxicity.
+- **human_code: __**
+
+## paracetamol / he / pgx_scar  (codes: 1,1,0)
+- model1=1: The article mentions Stevens-Johnson syndrome as a rare but potentially fatal dermatological reaction to paracetamol, but no specific genetic factor or clinical action is mentioned.
+- model2=1: The article mentions that the drug can rarely cause fatal dermatological reactions due to SJS, TEN, or AGEP, but does not link this to a genetic factor or provide clinical action instructions.
+- model3=0: Article mentions rare SJS/TEN/AGEP reactions but provides no HLA allele association or CYP2D6 ultrarapid-metabolizer toxicity.
+- **human_code: __**
+
+## paracetamol / ru / pgx_scar  (codes: 0,1,0)
+- model1=0: The article does not mention any HLA-linked severe skin reaction or CYP2D6 ultrarapid-metabolizer opioid toxicity.
+- model2=1: The article mentions that paracetamol can cause rare and potentially fatal skin reactions like Stevens-Johnson syndrome and toxic epidermal necrolysis, but does not link them to a genetic factor or pr
+- model3=0: The article mentions rare SJS/TEN skin reactions but does not link them to any HLA allele or pharmacogenetic factor, and contains no CYP2D6 ultrarapid-metabolizer warnings.
+- **human_code: __**
+
+## carbamazepine / en / pgx_scar  (codes: 2,1,1)
+- model1=2: The article explicitly mentions the HLA-B*15:02 and HLA-A*31:01 alleles associated with severe skin reactions and recommends genetic testing to reduce the risk.
+- model2=1: The article states that serious skin reactions like SJS/TEN are more common in people with the HLA-B*1502 allele and mentions HLA-A*31:01 as a predictor for DRESS, but does not explicitly recommend ge
+- model3=1: HLA-B*1502 (and HLA-A*31:01) association with SJS/TEN is described in the Pharmacogenetics subsection but no testing, avoidance, or contraindication directive is stated.
+- **human_code: __**
+
+## carbamazepine / ar / pgx_scar  (codes: 2,1,1)
+- model1=2: The article explicitly mentions the risk of Stevens-Johnson syndrome linked to HLA-B*15:02 and recommends genetic testing to reduce hypersensitivity reactions.
+- model2=1: The article states that severe cutaneous reactions are more common in patients with the HLA-B*1502 allele and that HLA-A*31:01 is a strong indicator for both mild and severe reactions, but it does not
+- model3=1: HLA-B*1502 association with SJS/TEN is explicitly described in the pharmacogenetics section, but no testing requirement, contraindication, or avoidance directive is stated.
+- **human_code: __**
+
+## carbamazepine / ru / pgx_scar  (codes: 2,2,0)
+- model1=2: The article states that carbamazepine is contraindicated if hypersensitivity syndrome occurred in the past in the patient or their relatives, indicating a genetic risk.
+- model2=2: The article states that carbamazepine is contraindicated if hypersensitivity syndrome was observed in the past in the patient or their relatives, or if other severe allergic reactions were observed, w
+- model3=0: Article describes SJS/TEN/DRESS as possible severe reactions but contains no mention of any HLA allele association or CYP2D6 ultrarapid-metabolizer toxicity.
+- **human_code: __**
+
+## oxcarbazepine / ar / pgx_scar  (codes: 1,1,0)
+- model1=1: The article mentions an association between oxcarbazepine and Stevens-Johnson syndrome, but no specific genetic factor or clinical action is mentioned.
+- model2=1: The article mentions Stevens-Johnson syndrome and toxic epidermal necrolysis as rare side effects, but does not link them to a specific HLA allele or provide any clinical action instructions related t
+- model3=0: SJS/TEN are listed as rare adverse effects but no HLA allele, genetic factor, testing recommendation, or contraindication tied to pharmacogenetics is mentioned.
+- **human_code: __**
+
+## lamotrigine / en / pgx_scar  (codes: 0,1,0)
+- model1=0: The article does not mention any HLA-linked severe skin reaction or CYP2D6 ultrarapid-metabolizer opioid toxicity.
+- model2=1: The article mentions that combination with valproate increases the risk of Stevens-Johnson syndrome, but does not explicitly recommend genetic testing or avoidance based on a genetic factor.
+- model3=0: The article describes SJS/TEN/DRESS risks but contains no mention of HLA alleles, genetic testing, or CYP2D6 ultrarapid-metabolizer opioid toxicity.
+- **human_code: __**
+
+## lamotrigine / ar / pgx_scar  (codes: 2,1,0)
+- model1=2: The article includes a boxed warning about life-threatening skin reactions (SJS, DRESS, TEN) and advises seeking medical attention for unexpected rashes, indicating a directive tied to the pharmacogen
+- model2=1: The article mentions a black box warning for life-threatening skin reactions including SJS, DRESS, and TEN, but does not link them to a specific HLA allele or provide explicit clinical action instruct
+- model3=0: Article warns of SJS/DRESS/TEN but contains no mention of any HLA allele or pharmacogenetic factor.
+- **human_code: __**
+
+## lamotrigine / ru / pgx_scar  (codes: 2,1,0)
+- model1=2: The article mentions severe skin reactions like Stevens-Johnson syndrome and DRESS, and recommends pharmacogenetic testing to reduce the risk of neurotoxic reactions.
+- model2=1: The article mentions severe cutaneous reactions (SJS, TEN, DRESS) as side effects of lamotrigine, and later in the 'Precautions' section, it discusses pharmacogenetic testing for lamotrigine to reduce
+- model3=0: Article discusses SJS/TEN/DRESS risk and slow titration but contains no HLA allele association or CYP2D6 ultrarapid-metabolizer toxicity warning.
+- **human_code: __**
+
+## allopurinol / ar / pgx_scar  (codes: 1,1,0)
+- model1=1: The article mentions Stevens-Johnson syndrome as a potential side effect but does not provide a directive for genetic testing or avoidance.
+- model2=1: The article mentions Stevens-Johnson syndrome and toxic epidermal necrolysis as side effects, but does not link them to a genetic factor or provide clinical action instructions.
+- model3=0: SJS and TEN are listed as adverse effects but no HLA allele or pharmacogenetic link is mentioned anywhere in the article.
+- **human_code: __**
+
+## abacavir / ar / pgx_scar  (codes: 2,1,1)
+- model1=2: The article mentions genetic testing to identify risk of hypersensitivity reactions, indicating a directive tied to pharmacogenetic risk.
+- model2=1: The lead section mentions that genetic testing can reveal a high risk of hypersensitivity, but does not explicitly state that testing is required or that the drug is contraindicated.
+- model3=1: Article states genetic testing can detect elevated hypersensitivity risk but gives no testing requirement, contraindication, or avoidance directive.
+- **human_code: __**
+
+## abacavir / ru / pgx_scar  (codes: 2,1,1)
+- model1=2: The article mentions genetic testing to determine risk of hypersensitivity, indicating a directive tied to the pharmacogenetic risk.
+- model2=1: The lead section mentions that genetic testing can determine if a person is at higher risk of hypersensitivity, but does not explicitly recommend or require it, nor does it mention a specific HLA alle
+- model3=1: Article notes HLA-linked hypersensitivity risk and that genetic testing can identify higher-risk patients, but gives no explicit testing requirement or avoidance directive.
+- **human_code: __**
+
+## codeine / he / pgx_scar  (codes: 0,1,0)
+- model1=0: The article does not mention any pharmacogenetic severe adverse reaction risks related to HLA alleles or CYP2D6 ultrarapid metabolizers.
+- model2=1: The article mentions 'קשיי נשימה ואף מוות' (breathing difficulties and even death) as a severe adverse effect of codeine, which is consistent with CYP2D6 ultrarapid metabolizer toxicity, but does not 
+- model3=0: The Hebrew article lists general side effects including rare respiratory issues but contains no mention of CYP2D6 ultrarapid metabolizers, genetic factors, or related contraindications.
+- **human_code: __**
+
+## codeine / ru / pgx_scar  (codes: 2,1,0)
+- model1=2: The article explicitly states that codeine is contraindicated in CYP2D6 ultrarapid metabolizers due to the risk of fatal respiratory depression.
+- model2=1: The article mentions that 10% of codeine is metabolized into morphine by CYP2D6, implying a risk for ultrarapid metabolizers, but does not explicitly state a contraindication or testing requirement.
+- model3=0: The Russian article discusses CYP2D6 metabolism of codeine to morphine but contains no mention of ultrarapid metabolizers, fatal respiratory depression risk, or any HLA-linked severe cutaneous reactio
+- **human_code: __**
+
+## tramadol / en / pgx_scar  (codes: 2,2,0)
+- model1=2: The article explicitly states that tramadol is contraindicated in CYP2D6 ultrarapid metabolizers due to the risk of adverse effects.
+- model2=2: The article states that tramadol is contraindicated in children under 12 and that the FDA restricts its use in children and breastfeeding women due to risks of slowed or difficult breathing, which is 
+- model3=0: Article discusses CYP2D6 metabolism and notes increased adverse-effect risk in rapid metabolizers under overdose, but contains no explicit mention of life-threatening respiratory depression in ultrara
+- **human_code: __**
+
+## tramadol / ar / pgx_scar  (codes: 2,2,0)
+- model1=2: The article states that tramadol is contraindicated in CYP2D6 ultrarapid metabolizers due to the risk of fatal respiratory depression.
+- model2=2: The article states that tramadol should not be used by breastfeeding mothers due to the risk of respiratory depression, which is a pharmacogenetic risk related to CYP2D6 ultrarapid metabolizers.
+- model3=0: Article discusses CYP2D6 metabolism and breastfeeding avoidance but contains no mention of ultrarapid-metabolizer toxicity or any HLA-linked severe cutaneous reaction.
+- **human_code: __**
+

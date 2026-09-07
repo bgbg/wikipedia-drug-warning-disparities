@@ -1,0 +1,33 @@
+{
+  "input": "data/coded/coded_four_topic.csv",
+  "drugs": "data/drugs.csv",
+  "output_dir": "data/coded/ordinal_analysis_four_topic",
+  "topics": [
+    "g6pd",
+    "teratogenicity",
+    "qt"
+  ],
+  "n_main_fit_rows": 96,
+  "n_control_rows": 108,
+  "n_control_deviates": 12,
+  "max_rhat": 1.0,
+  "min_ess_bulk": 2332.0,
+  "config": {
+    "prior_sd": 1.5,
+    "draws": 2000,
+    "tune": 2000,
+    "chains": 4,
+    "target_accept": 0.95,
+    "seed": 23,
+    "n_boot_cliffs": 2000,
+    "prior_sensitivity_sds": [
+      0.5,
+      1.5,
+      5.0
+    ],
+    "rope_or_bounds": [
+      0.5,
+      2.0
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "input": "data/coded/coded_four_topic.csv",
+  "formula": "code ~ 1 + C(lang, Treatment('en')) + (1|drug) + (C(lang, Treatment('en'))|topic)",
+  "seed": 23,
+  "draws": 1500,
+  "tune": 1500,
+  "chains": 4,
+  "n_obs": 204
+}

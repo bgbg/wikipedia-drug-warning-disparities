@@ -1,0 +1,14 @@
+The contents of the `data/` directory (drug list, classification outputs, LLM
+response logs, Wikidata audit, and analysis outputs) are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+To view a copy of this license, visit:
+https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt this data for any purpose, including
+commercially, provided you give appropriate credit to the study authors
+(Berlin M, Berkovitch M, Benassayag Kaduri N, Gorelik E, Gorelik B), provide a
+link to the license, and indicate if changes were made.
+
+Code in this repository (the `src/`, `scripts/`, and `tests/` directories) is
+licensed separately under the MIT License; see LICENSE.

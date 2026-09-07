@@ -1,0 +1,13 @@
+{
+  "input": "/Users/boris/devel/jce/pharmaco/g6pd/data/coded/coded_four_topic.csv",
+  "n_main_fit_rows": 96,
+  "n_existing_articles": 85,
+  "n_mentioned_cells": 70,
+  "seed": 23,
+  "draws": 1500,
+  "tune": 1500,
+  "chains": 4,
+  "formula_baseline": "code ~ 1 + C(lang, Treatment('en')) + (1 | drug) + (C(lang, Treatment('en')) | topic)",
+  "formula_length_adjusted": "code ~ 1 + C(lang, Treatment('en')) + log_wc_c + (1 | drug) + (C(lang, Treatment('en')) | topic)",
+  "formula_conditional": "directive ~ 1 + C(lang, Treatment('en')) + (1 | drug)"
+}

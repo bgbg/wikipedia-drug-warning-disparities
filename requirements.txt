@@ -1,0 +1,15 @@
+requests
+pandas
+matplotlib
+SPARQLWrapper
+mwparserfromhell
+playwright
+python-dotenv
+openai
+scipy
+statsmodels
+bambi
+pymc
+arviz
+tabulate
+pytest

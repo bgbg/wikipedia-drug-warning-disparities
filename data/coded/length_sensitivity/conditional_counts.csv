@@ -1,0 +1,5 @@
+language,n_mentioned,n_directive,p_directive_given_mention
+en,23,19,0.8261
+ru,15,12,0.8
+ar,15,7,0.4667
+he,17,10,0.5882

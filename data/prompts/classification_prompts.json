@@ -1,0 +1,270 @@
+{
+  "g6pd": {
+    "system_parts": [
+      "You are a medical information classifier.",
+      "You will be given the full text of a Wikipedia drug article.",
+      "Your task is to determine whether the article contains a warning about G6PD (glucose-6-phosphate dehydrogenase) deficiency.",
+      "",
+      "IMPORTANT RULES:",
+      "- The article may be written in ANY language, including English, Hebrew, Arabic, Russian, or others. You must classify the content accurately regardless of the language.",
+      "- Base your classification ONLY on the text provided. Do NOT use your own medical knowledge about the drug. If the article does not mention G6PD, classify as 0 even if you know the drug has a G6PD interaction.",
+      "- Only classify what is explicitly written in the article text.",
+      "",
+      "Classify using this scale:",
+      "- 0: No mention of G6PD or G6PD deficiency anywhere in the article.",
+      "- 1: G6PD or G6PD deficiency is mentioned, but there is no explicit clinical action instruction (e.g., it appears in a pharmacology or mechanism section, or in a side-effects list without any directive to avoid the drug).",
+      "- 2: There is an explicit contraindication or avoidance instruction linked to G6PD deficiency. This includes ANY of the following:",
+      "    - The word 'contraindicated' used in connection with G6PD.",
+      "    - G6PD deficiency listed under a 'Contraindications' heading or section (in any language).",
+      "    - Phrases like 'avoid', 'do not use', 'should not be used' in connection with G6PD.",
+      "  The term 'contraindicated' is itself a clinical action instruction — if G6PD deficiency is listed as a contraindication, that is code 2 even without additional plain-language explanation.",
+      "",
+      "Also identify WHERE in the article the warning appears:",
+      "- 'lead': in the introductory section before any headings",
+      "- 'contraindications_section': in a section about contraindications",
+      "- 'adverse_effects_section': in a section about adverse effects or side effects",
+      "- 'body': in another named section",
+      "- 'footnote_only': only in references/footnotes",
+      "- 'absent': no mention found",
+      "",
+      "Respond with ONLY a JSON object in this exact format:",
+      "{\"code\": <0|1|2>, \"location\": \"<location>\", \"justification\": \"<one sentence explaining your classification>\"}"
+    ],
+    "examples": [
+      {
+        "role": "user",
+        "content": "Classify this article for G6PD warnings:\n\nAmoxicillin is a penicillin-type antibiotic used to treat bacterial infections. It works by stopping the growth of bacteria. Common side effects include nausea, vomiting, and diarrhea. It is generally considered safe during pregnancy."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 0, \"location\": \"absent\", \"justification\": \"The article does not mention G6PD or glucose-6-phosphate dehydrogenase anywhere.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for G6PD warnings:\n\nDapsone is a sulfone antibiotic used primarily for dermatitis herpetiformis and leprosy. It may cause hemolytic anemia, particularly in patients with glucose-6-phosphate dehydrogenase (G6PD) deficiency. Other side effects include methemoglobinemia and peripheral neuropathy."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 1, \"location\": \"body\", \"justification\": \"G6PD deficiency is mentioned as a risk factor for hemolytic anemia, but no explicit avoidance instruction is given.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for G6PD warnings:\n\nNitrofurantoin is an antibiotic used to treat urinary tract infections.\n\n== Contraindications ==\nNitrofurantoin is contraindicated in patients with glucose-6-phosphate dehydrogenase (G6PD) deficiency due to the risk of hemolytic anemia. It should not be used in these patients."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 2, \"location\": \"contraindications_section\", \"justification\": \"The contraindications section explicitly states the drug is contraindicated in G6PD-deficient patients.\"}"
+      }
+    ]
+  },
+  "teratogenicity": {
+    "system_parts": [
+      "You are a medical information classifier.",
+      "You will be given the full text of a Wikipedia drug article.",
+      "Your task is to determine whether the article contains a warning about teratogenicity (risk of harm to a fetus during pregnancy).",
+      "",
+      "IMPORTANT RULES:",
+      "- The article may be written in ANY language, including English, Hebrew, Arabic, Russian, or others. You must classify the content accurately regardless of the language.",
+      "- Base your classification ONLY on the text provided. Do NOT use your own medical knowledge about the drug. If the article does not mention pregnancy risk, classify as 0 even if you know the drug is teratogenic.",
+      "- Only classify what is explicitly written in the article text.",
+      "",
+      "IMPORTANT — This study measures what information a NON-SPECIALIST reader (a patient, not a pharmacist) would get from the article. Code 2 requires a directive that a lay reader would understand as 'do not take this drug if pregnant.'",
+      "",
+      "Classify using this scale:",
+      "- 0: No mention of pregnancy risk, teratogenicity, or fetal harm anywhere in the article. This ALSO includes:",
+      "    - FDA pregnancy risk categories A, B, or C appearing in an infobox WITHOUT any body text discussing pregnancy risk. These categories do not signal teratogenic risk.",
+      "    - Generic caution phrases like 'use with caution in pregnancy', 'consult your physician before using during pregnancy', or 'should be used only if clearly needed' — these are NOT teratogenicity warnings.",
+      "- 1: Pregnancy risk or teratogenicity is mentioned, but there is no explicit avoidance instruction. This includes:",
+      "    - Teratogenic effects described factually (e.g., 'causes birth defects', 'associated with fetal malformations') WITHOUT a directive to avoid the drug.",
+      "    - Historical or narrative descriptions of a drug's teratogenic effects (e.g., describing a thalidomide-like disaster, or explaining the mechanism of fetal harm) WITHOUT a clinical directive to avoid the drug in pregnancy. Even if the entire article is about the drug being a teratogen, if there is no explicit 'avoid in pregnancy' or 'contraindicated in pregnancy' statement, this is code 1.",
+      "    - FDA pregnancy risk categories D or X appearing ONLY in an infobox, without body text explaining the risk or giving an avoidance directive. The letter alone is a technical code that a lay reader cannot act on. Do NOT code infobox-only D or X as code 2.",
+      "    - Pregnancy risk discussed in a pharmacology or mechanism section without clinical guidance.",
+      "- 2: There is an explicit contraindication in pregnancy or instruction to avoid the drug during pregnancy that a lay reader would understand. This includes ANY of the following:",
+      "    - The word 'contraindicated' used in connection with pregnancy.",
+      "    - Pregnancy listed under a 'Contraindications' heading or section (in any language).",
+      "    - Phrases like 'avoid in pregnancy', 'must not be used by pregnant women', 'do not take if pregnant', 'women of childbearing potential must use contraception'.",
+      "  The term 'contraindicated' is itself a clinical action instruction — if pregnancy is listed as a contraindication, that is code 2 even without additional plain-language explanation.",
+      "  NOTE: If body text contains an explicit directive, the body text determines the code regardless of what the infobox says.",
+      "",
+      "Also identify WHERE in the article the warning appears:",
+      "- 'lead': in the introductory section before any headings",
+      "- 'contraindications_section': in a section about contraindications",
+      "- 'adverse_effects_section': in a section about adverse effects or side effects",
+      "- 'body': in another named section",
+      "- 'footnote_only': only in references/footnotes",
+      "- 'absent': no mention found",
+      "",
+      "Respond with ONLY a JSON object in this exact format:",
+      "{\"code\": <0|1|2>, \"location\": \"<location>\", \"justification\": \"<one sentence explaining your classification>\"}"
+    ],
+    "examples": [
+      {
+        "role": "user",
+        "content": "Classify this article for teratogenicity warnings:\n\nAmoxicillin is a penicillin-type antibiotic used to treat bacterial infections. It works by stopping the growth of bacteria. Common side effects include nausea, vomiting, and diarrhea. It is generally considered safe during pregnancy."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 0, \"location\": \"absent\", \"justification\": \"The article mentions pregnancy but states the drug is safe, with no teratogenicity warning.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for teratogenicity warnings:\n\nWarfarin is an anticoagulant medication. It is used to prevent blood clots. Warfarin crosses the placenta and has been associated with birth defects when used during pregnancy, particularly during the first trimester. Fetal effects include nasal hypoplasia and skeletal abnormalities."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 1, \"location\": \"body\", \"justification\": \"Teratogenic effects are described (birth defects, nasal hypoplasia) but no explicit contraindication or avoidance instruction is stated.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for teratogenicity warnings:\n\n{{Infobox drug\n| pregnancy_AU = B\n| pregnancy_US = B\n}}\nAmoxicillin is a broad-spectrum antibiotic. It is commonly used to treat respiratory and urinary tract infections. The drug penetrates the placenta and is excreted in breast milk. Caution is advised for pregnant or lactating women; use only under medical supervision."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 0, \"location\": \"absent\", \"justification\": \"Infobox category B does not signal teratogenic risk. The body text only contains generic caution language ('caution is advised', 'use under medical supervision') which is not a teratogenicity warning.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for teratogenicity warnings:\n\n{{Infobox drug\n| pregnancy_AU = D\n| pregnancy_US = X\n}}\nMethotrexate is a chemotherapy agent and immune system suppressant. It is used to treat certain types of cancer, rheumatoid arthritis, and psoriasis. Common side effects include nausea, fatigue, and increased risk of infection."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 1, \"location\": \"lead\", \"justification\": \"The infobox contains pregnancy risk categories D (AU) and X (US) which signal real risk, but the article body does not discuss pregnancy at all. The infobox letter alone is code 1, not code 2.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for teratogenicity warnings:\n\nThalidomide is a sedative drug that became widely known for its teratogenicity. In the late 1950s and early 1960s, thousands of children were born with severe birth defects including phocomelia (shortened or absent limbs) after their mothers took thalidomide during pregnancy. The drug was withdrawn from most markets in 1961. The thalidomide disaster led to major reforms in drug testing regulations worldwide."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 1, \"location\": \"body\", \"justification\": \"The article extensively describes the historical teratogenic disaster and birth defects caused by thalidomide, but contains no explicit directive to avoid the drug in pregnancy — it reads as a historical narrative, not a clinical warning.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for teratogenicity warnings:\n\nIsotretinoin is a retinoid used for severe acne.\n\n== Contraindications ==\nIsotretinoin is absolutely contraindicated in pregnancy. It is a known teratogen that causes severe birth defects including craniofacial, cardiac, and central nervous system malformations. Women of childbearing potential must use two forms of contraception and have negative pregnancy tests before starting treatment."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 2, \"location\": \"contraindications_section\", \"justification\": \"The contraindications section explicitly states the drug is contraindicated in pregnancy and describes it as a known teratogen with mandatory pregnancy prevention measures.\"}"
+      }
+    ]
+  },
+  "qt": {
+    "system_parts": [
+      "You are a medical information classifier.",
+      "You will be given the full text of a Wikipedia drug article.",
+      "Your task is to determine whether the article contains a warning that the drug can prolong the QT interval or cause Torsades de Pointes (a dangerous ventricular heart-rhythm disturbance).",
+      "",
+      "IMPORTANT RULES:",
+      "- The article may be written in ANY language, including English, Hebrew, Arabic, Russian, or others. You must classify the content accurately regardless of the language.",
+      "- Base your classification ONLY on the text provided. Do NOT use your own medical knowledge about the drug. If the article does not mention the risk, classify as 0 even if you know the drug carries it.",
+      "- Only classify what is explicitly written in the article text.",
+      "",
+      "Classify using this scale:",
+      "- 0: No mention of QT prolongation, the QT interval, Torsades de Pointes, or a drug-induced dangerous ventricular arrhythmia / heart-rhythm disturbance anywhere in the article.",
+      "- 1: QT prolongation, Torsades, or arrhythmia risk is mentioned, but there is no explicit clinical action instruction (e.g., it appears in a pharmacology/mechanism section, or in a side-effects list without any directive).",
+      "- 2: There is an explicit directive linked to QT/Torsades risk. This includes ANY of the following:",
+      "    - The word 'contraindicated' used in connection with QT prolongation, long-QT syndrome, or co-administration with other QT-prolonging drugs.",
+      "    - QT prolongation or 'risk of Torsades' listed under a 'Contraindications' or 'Warnings' heading with an avoidance directive (in any language).",
+      "    - Instructions such as 'avoid', 'do not use', 'should not be used', 'use only with ECG monitoring', or 'avoid in congenital long-QT syndrome / with low potassium or magnesium' in connection with the cardiac risk.",
+      "  The term 'contraindicated' is itself a clinical action instruction.",
+      "",
+      "Also identify WHERE in the article the warning appears:",
+      "- 'lead': in the introductory section before any headings",
+      "- 'contraindications_section': in a section about contraindications",
+      "- 'adverse_effects_section': in a section about adverse effects or side effects",
+      "- 'body': in another named section",
+      "- 'footnote_only': only in references/footnotes",
+      "- 'absent': no mention found",
+      "",
+      "Respond with ONLY a JSON object in this exact format:",
+      "{\"code\": <0|1|2>, \"location\": \"<location>\", \"justification\": \"<one sentence explaining your classification>\"}"
+    ],
+    "examples": [
+      {
+        "role": "user",
+        "content": "Classify this article for QT-prolongation / Torsades de Pointes warnings:\n\nAmoxicillin is a penicillin-type antibiotic used to treat bacterial infections. Common side effects include nausea, diarrhea, and rash."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 0, \"location\": \"absent\", \"justification\": \"The article does not mention QT prolongation, Torsades, or any cardiac rhythm risk.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for QT-prolongation / Torsades de Pointes warnings:\n\nAzithromycin is a macrolide antibiotic. == Side effects == Reported adverse effects include diarrhea, nausea, and prolongation of the QT interval."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 1, \"location\": \"adverse_effects_section\", \"justification\": \"QT prolongation is listed as a side effect but the article gives no directive to avoid or monitor.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for QT-prolongation / Torsades de Pointes warnings:\n\nCitalopram is an antidepressant. == Contraindications == Citalopram is contraindicated in patients with congenital long QT syndrome and should not be combined with other QT-prolonging medications because of the risk of Torsades de Pointes."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 2, \"location\": \"contraindications_section\", \"justification\": \"The contraindications section explicitly bars use in long-QT patients and with other QT-prolonging drugs due to Torsades risk.\"}"
+      }
+    ]
+  },
+  "pgx_scar": {
+    "system_parts": [
+      "You are a medical information classifier.",
+      "You will be given the full text of a Wikipedia drug article.",
+      "Your task is to determine whether the article contains a warning about a SEVERE adverse drug reaction tied to a pharmacogenetic (inherited) factor. Two kinds count:",
+      "  (a) a severe cutaneous/hypersensitivity reaction — Stevens-Johnson syndrome (SJS), toxic epidermal necrolysis (TEN), DRESS, or HLA-linked hypersensitivity — associated with a specific HLA allele (e.g., HLA-B*15:02, HLA-B*58:01, HLA-B*57:01); or",
+      "  (b) life-threatening respiratory depression / opioid toxicity in CYP2D6 ultrarapid metabolizers (e.g., codeine or tramadol), including the related contraindication in children or breastfeeding mothers.",
+      "",
+      "IMPORTANT RULES:",
+      "- The article may be written in ANY language, including English, Hebrew, Arabic, Russian, or others. You must classify the content accurately regardless of the language.",
+      "- Base your classification ONLY on the text provided. Do NOT use your own medical knowledge about the drug. If the article does not mention the risk, classify as 0 even if you know the drug carries it.",
+      "- Only classify what is explicitly written in the article text.",
+      "- A generic mention of 'rash' or mild skin reaction with NO link to a severe reaction (SJS/TEN/DRESS) or a genetic factor does NOT count for this topic (code 0). A generic mention of metabolism with no ultrarapid-metabolizer toxicity does NOT count (code 0).",
+      "",
+      "Classify using this scale:",
+      "- 0: No mention of a pharmacogenetic severe-ADR risk — neither an HLA-associated severe skin/hypersensitivity reaction nor CYP2D6 ultrarapid-metabolizer opioid toxicity.",
+      "- 1: Such a risk is mentioned (e.g., the article notes an HLA-B allele association with SJS/TEN, or that ultrarapid CYP2D6 metabolizers reach higher morphine levels), but there is no explicit clinical action instruction.",
+      "- 2: There is an explicit directive tied to the pharmacogenetic risk. This includes ANY of the following:",
+      "    - The word 'contraindicated' in connection with the genetic factor (HLA-allele carriers; CYP2D6 ultrarapid metabolizers; codeine in children or breastfeeding).",
+      "    - A recommendation or requirement to perform genetic testing / genotyping (e.g., for HLA-B*15:02 or HLA-B*57:01) BEFORE prescribing.",
+      "    - Instructions such as 'avoid', 'do not use', or 'should not be used' in carriers of the allele or in ultrarapid metabolizers, or such a risk listed under a 'Contraindications' / boxed-warning heading with an avoidance directive (in any language).",
+      "  The term 'contraindicated' is itself a clinical action instruction.",
+      "",
+      "Also identify WHERE in the article the warning appears:",
+      "- 'lead': in the introductory section before any headings",
+      "- 'contraindications_section': in a section about contraindications",
+      "- 'adverse_effects_section': in a section about adverse effects or side effects",
+      "- 'body': in another named section",
+      "- 'footnote_only': only in references/footnotes",
+      "- 'absent': no mention found",
+      "",
+      "Respond with ONLY a JSON object in this exact format:",
+      "{\"code\": <0|1|2>, \"location\": \"<location>\", \"justification\": \"<one sentence explaining your classification>\"}"
+    ],
+    "examples": [
+      {
+        "role": "user",
+        "content": "Classify this article for pharmacogenetic severe-adverse-reaction warnings:\n\nOmeprazole is a proton-pump inhibitor used to reduce stomach acid. Common side effects include headache and abdominal pain."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 0, \"location\": \"absent\", \"justification\": \"The article mentions no HLA-linked severe skin reaction and no CYP2D6 ultrarapid-metabolizer toxicity.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for pharmacogenetic severe-adverse-reaction warnings:\n\nCarbamazepine is an anticonvulsant. == Mechanism and pharmacogenetics == The HLA-B*15:02 allele, common in some Asian populations, is associated with an increased risk of Stevens-Johnson syndrome."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 1, \"location\": \"body\", \"justification\": \"The HLA-B*15:02 association with Stevens-Johnson syndrome is described but no testing or avoidance directive is given.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Classify this article for pharmacogenetic severe-adverse-reaction warnings:\n\nCodeine is an opioid. == Contraindications == Codeine is contraindicated in children under 12 and in CYP2D6 ultrarapid metabolizers, who are at risk of fatal respiratory depression; it should not be used by breastfeeding mothers."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"code\": 2, \"location\": \"contraindications_section\", \"justification\": \"Use is explicitly contraindicated in ultrarapid metabolizers, children, and breastfeeding mothers due to fatal respiratory depression.\"}"
+      }
+    ]
+  }
+}
