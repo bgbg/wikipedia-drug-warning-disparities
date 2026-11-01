@@ -1,0 +1,27 @@
+{
+  "retrieved_on": "2026-10-02",
+  "source": "wbgetentities",
+  "language": "en",
+  "properties": {
+    "P1909": {
+      "label": "side effect",
+      "description": "effect of a medication or procedure, that occurs next to the desired effect",
+      "datatype": "wikibase-item"
+    },
+    "P769": {
+      "label": "significant drug interaction",
+      "description": "clinically significant interaction between two pharmacologically active substances (i.e., drugs and/or active metabolites) where concomitant intake can lead to altered effectiveness or adverse drug events.",
+      "datatype": "wikibase-item"
+    },
+    "P3489": {
+      "label": "pregnancy category",
+      "description": "official categorisation of safety of medicine in pregnancy",
+      "datatype": "wikibase-item"
+    },
+    "P10946": {
+      "label": "contraindicated in case of",
+      "description": "medical condition for which the net benefit of a medical procedure is expected to be negative",
+      "datatype": "wikibase-item"
+    }
+  }
+}

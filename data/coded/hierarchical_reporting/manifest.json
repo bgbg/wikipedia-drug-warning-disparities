@@ -1,0 +1,21 @@
+{
+  "input": "/Users/boris/devel/jce/pharmaco/g6pd/.trees/feat-79-manuscript-revision-model-reporting/data/coded/coded_four_topic.csv",
+  "primary_formula": "code ~ 1 + C(lang, Treatment('en')) + (1 | drug) + (C(lang, Treatment('en')) | topic)",
+  "post_hoc_formula": "code ~ 1 + C(lang, Treatment('en')) + C(topic) + (1 | drug)",
+  "post_hoc_note": "post hoc, not prespecified; no preregistration",
+  "primary_tau_prior": "HalfNormal(5.7735) (bambi default)",
+  "alt_tau_priors": [
+    "HalfNormal(0.5)",
+    "HalfNormal(1)"
+  ],
+  "seed": 23,
+  "draws": 1500,
+  "tune": 1500,
+  "chains": 4,
+  "target_accept": 0.98,
+  "prior_sd_language": 1.5,
+  "n_input_rows": 204,
+  "n_obs_fitted": 96,
+  "repro_tol": 1e-06,
+  "qt_status": "QT disagreements carry the majority-vote code, final for the submitted analysis (decision of 15/10/2026)"
+}

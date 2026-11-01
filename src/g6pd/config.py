@@ -13,6 +13,8 @@ DRUGS_CSV = DATA_DIR / "drugs.csv"
 ARTICLES_JSONL = RAW_DIR / "articles.jsonl"
 WARNINGS_CSV = CODED_DIR / "warnings.csv"
 WIKIDATA_GAPS_CSV = DATA_DIR / "wikidata_gaps.csv"
+WIKIDATA_PROPERTIES_JSON = DATA_DIR / "wikidata_properties.json"
+WIKIDATA_BASE_RATES_CSV = DATA_DIR / "wikidata_base_rates.csv"
 
 # LLM classification pipeline
 PROMPTS_DIR = DATA_DIR / "prompts"
@@ -42,3 +44,13 @@ TOPIC_WARNINGS = {
 # miscounted as negative controls.
 CONTROL_RISK_COLS = ["cpic_risk", "pregnancy_risk", "qt_risk", "pgx_risk"]
 METHOD_COMPARISON_CSV = CODED_DIR / "g6pd_method_comparison.csv"
+
+# Blind validation of the LLM codes by the collaborators (#77). Per-slot cases
+# (article text) and pulled annotation CSVs are gitignored; only the aggregated
+# precheck/agreement tables directly under VALIDATION_DIR are committed.
+CODED_FOUR_TOPIC_CSV = CODED_DIR / "coded_four_topic.csv"
+VALIDATION_DIR = DATA_DIR / "validation"
+VALIDATION_CASES_DIR = VALIDATION_DIR / "cases"
+VALIDATION_ANNOTATIONS_DIR = VALIDATION_DIR / "annotations"
+VALIDATION_BACKUPS_DIR = VALIDATION_DIR / "backups"
+

@@ -78,7 +78,7 @@ def test_code2_tables():
 
 # --- 3. observed_composition.csv == composition of coded_four_topic positives ---
 def test_observed_composition(cft):
-    posdrugs = {t: {r["drug"] for r in _positives(t)} for t in ("g6pd", "teratogenicity")}
+    posdrugs = {t: {r["drug"] for r in _positives(t)} for t in ("g6pd", "teratogenicity", "qt")}
     comp = Counter()
     nobs = Counter()
     for r in cft:
@@ -133,13 +133,14 @@ def test_hebrew_reference_fix():
 # --- 5. OR tables transcribed from the staged model outputs --------------------
 def test_cumulative_or_table():
     cum = {(r["language"], r["topic"]): r for r in _read("cumulative_ors.csv")}
+    # Frozen seed-23 run (supplement Table S3; submission/results_update.md section E row 9).
     expected = {
-        ("ru", "g6pd"): (0.08, 0.00, 0.26, 99.8),
-        ("ar", "g6pd"): (0.25, 0.01, 0.69, 98.1),
-        ("he", "g6pd"): (0.51, 0.01, 1.61, 87.9),
-        ("ru", "teratogenicity"): (0.40, 0.01, 1.26, 92.2),
-        ("ar", "teratogenicity"): (0.69, 0.02, 2.18, 79.9),
-        ("he", "teratogenicity"): (0.51, 0.01, 1.58, 88.0),
+        ("ru", "g6pd"): (0.08, 0.00, 0.25, 99.8),
+        ("ar", "g6pd"): (0.26, 0.01, 0.70, 98.1),
+        ("he", "g6pd"): (0.51, 0.01, 1.61, 87.7),
+        ("ru", "teratogenicity"): (0.41, 0.01, 1.32, 91.5),
+        ("ar", "teratogenicity"): (0.67, 0.01, 2.09, 81.7),
+        ("he", "teratogenicity"): (0.49, 0.01, 1.54, 89.0),
     }
     for key, exp in expected.items():
         r = cum[key]

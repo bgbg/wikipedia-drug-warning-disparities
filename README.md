@@ -2,7 +2,7 @@
 
 Code, data, and analysis outputs for a cross-lingual audit of drug-safety warnings on Wikipedia.
 
-> Berlin M, Berkovitch M, Benassayag Kaduri N, Gorelik E, Gorelik B. *Weaker Drug-Safety Warnings on Non-English Wikipedia: A Cross-Lingual Audit Across Three Drug-Safety Domains.* Manuscript submitted to the Journal of the American Medical Informatics Association (JAMIA), 2026.
+> Berlin M, Berkovitch M, Benassayag Kaduri N, Gorelik E, Gorelik B. *Drug Safety Warnings in English, Russian, Arabic and Hebrew Wikipedia: A Cross-Sectional Audit of 33 Drugs Across Three Risk Domains.* Manuscript submitted to the European Journal of Clinical Pharmacology, 2026.
 
 ## What this is
 
@@ -49,6 +49,16 @@ data/
                                   sweep, Wilcoxon test, Cliff's delta)
     length_sensitivity/          length-adjusted model and mention-to-directive
                                   conditional analysis
+    hierarchical_reporting/      model-reporting additions (finite-population
+                                  summary, tau prior table, joint posterior
+                                  probabilities, post hoc common-effect model)
+    model_agreement_three_domains.csv
+                                  inter-model agreement by domain
+  snapshot_revisions.csv       archived Wikipedia revision IDs of the audited articles
+  snapshot_drift.csv           drift between the audited and later revisions
+  wikidata_base_rates.csv      Wikidata denominator and base rates
+  wikidata_properties.json     verified Wikidata property labels
+  validation/                  blind-validation precheck agreement tables
 ```
 
 Raw fetched Wikipedia article text is not included, for size and licensing reasons. It is reproducible from `scripts/collect_articles.py` and the snapshot dates reported in the manuscript.

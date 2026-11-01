@@ -1,121 +1,331 @@
-drug,topic,wikidata_qid,risk_basis,wikidata_status,properties_found
-rasburicase,g6pd,Q3088229,Contraindicated,absent,
-methylene_blue,g6pd,Q422134,Contraindicated,absent,
-pegloticase,g6pd,Q7160794,Contraindicated,absent,
-dapsone,g6pd,Q422226,Avoid in deficient patients,absent,
-nitrofurantoin,g6pd,Q422669,Use with caution,absent,
-phenazopyridine,g6pd,Q3114549,Use with caution,absent,
-primaquine,g6pd,Q419834,Contraindicated,absent,
-toluidine_blue,g6pd,Q80868,Contraindicated,absent,
-isotretinoin,g6pd,Q287029,,not_applicable,
-valproic_acid,g6pd,Q240642,,not_applicable,
-methotrexate,g6pd,Q422232,,not_applicable,
-warfarin,g6pd,Q113368879,,not_applicable,
-thalidomide,g6pd,Q203174,,not_applicable,
-phenytoin,g6pd,Q410400,,not_applicable,
-mycophenolate,g6pd,Q420553,,not_applicable,
-methimazole,g6pd,Q419663,,not_applicable,
-amoxicillin,g6pd,Q201928,,control_no_link_expected,
-atorvastatin,g6pd,Q668093,,control_no_link_expected,
-omeprazole,g6pd,Q422210,,control_no_link_expected,
-doxylamine,g6pd,Q423390,,control_no_link_expected,
-pyridoxine,g6pd,Q423746,,control_no_link_expected,
-paracetamol,g6pd,Q57055,,control_no_link_expected,
-loratadine,g6pd,Q424049,,control_no_link_expected,
-famotidine,g6pd,Q411159,,control_no_link_expected,
-loperamide,g6pd,Q423751,,control_no_link_expected,
-citalopram,g6pd,Q409672,,not_applicable,
-azithromycin,g6pd,Q165399,,not_applicable,
-levofloxacin,g6pd,Q424193,,not_applicable,
-ondansetron,g6pd,Q410011,,not_applicable,
-haloperidol,g6pd,Q251347,,not_applicable,
-methadone,g6pd,Q179996,,not_applicable,
-hydroxychloroquine,g6pd,Q421094,,not_applicable,
-domperidone,g6pd,Q424238,,not_applicable,
-carbamazepine,g6pd,Q410412,,not_applicable,
-oxcarbazepine,g6pd,Q176301,,not_applicable,
-lamotrigine,g6pd,Q410346,,not_applicable,
-allopurinol,g6pd,Q412486,,not_applicable,
-abacavir,g6pd,Q304330,,not_applicable,
-codeine,g6pd,Q174723,,not_applicable,
-tramadol,g6pd,Q407592,,not_applicable,
-rasburicase,teratogenicity,Q3088229,,not_applicable,
-methylene_blue,teratogenicity,Q422134,,not_applicable,
-pegloticase,teratogenicity,Q7160794,,not_applicable,
-dapsone,teratogenicity,Q422226,,not_applicable,
-nitrofurantoin,teratogenicity,Q422669,,not_applicable,
-phenazopyridine,teratogenicity,Q3114549,,not_applicable,
-primaquine,teratogenicity,Q419834,,not_applicable,
-toluidine_blue,teratogenicity,Q80868,,not_applicable,
-isotretinoin,teratogenicity,Q287029,Contraindicated (iPLEDGE/REMS),absent,
-valproic_acid,teratogenicity,Q240642,Contraindicated (FDA black box),absent,
-methotrexate,teratogenicity,Q422232,Contraindicated (PLLR),absent,
-warfarin,teratogenicity,Q113368879,Contraindicated (1st tri; black box 2nd/3rd),absent,
-thalidomide,teratogenicity,Q203174,Contraindicated (REMS),absent,
-phenytoin,teratogenicity,Q410400,Contraindicated (fetal hydantoin syndrome),absent,
-mycophenolate,teratogenicity,Q420553,Contraindicated (REMS),absent,
-methimazole,teratogenicity,Q419663,Contraindicated (methimazole embryopathy),absent,
-amoxicillin,teratogenicity,Q201928,,control_no_link_expected,
-atorvastatin,teratogenicity,Q668093,,control_no_link_expected,
-omeprazole,teratogenicity,Q422210,,control_no_link_expected,
-doxylamine,teratogenicity,Q423390,,control_no_link_expected,
-pyridoxine,teratogenicity,Q423746,,control_no_link_expected,
-paracetamol,teratogenicity,Q57055,,control_no_link_expected,
-loratadine,teratogenicity,Q424049,,control_no_link_expected,
-famotidine,teratogenicity,Q411159,,control_no_link_expected,
-loperamide,teratogenicity,Q423751,,control_no_link_expected,
-citalopram,teratogenicity,Q409672,,not_applicable,
-azithromycin,teratogenicity,Q165399,,not_applicable,
-levofloxacin,teratogenicity,Q424193,,not_applicable,
-ondansetron,teratogenicity,Q410011,,not_applicable,
-haloperidol,teratogenicity,Q251347,,not_applicable,
-methadone,teratogenicity,Q179996,,not_applicable,
-hydroxychloroquine,teratogenicity,Q421094,,not_applicable,
-domperidone,teratogenicity,Q424238,,not_applicable,
-carbamazepine,teratogenicity,Q410412,,not_applicable,
-oxcarbazepine,teratogenicity,Q176301,,not_applicable,
-lamotrigine,teratogenicity,Q410346,,not_applicable,
-allopurinol,teratogenicity,Q412486,,not_applicable,
-abacavir,teratogenicity,Q304330,,not_applicable,
-codeine,teratogenicity,Q174723,,not_applicable,
-tramadol,teratogenicity,Q407592,,not_applicable,
-rasburicase,qt,Q3088229,,not_applicable,
-methylene_blue,qt,Q422134,,not_applicable,
-pegloticase,qt,Q7160794,,not_applicable,
-dapsone,qt,Q422226,,not_applicable,
-nitrofurantoin,qt,Q422669,,not_applicable,
-phenazopyridine,qt,Q3114549,,not_applicable,
-primaquine,qt,Q419834,,not_applicable,
-toluidine_blue,qt,Q80868,,not_applicable,
-isotretinoin,qt,Q287029,,not_applicable,
-valproic_acid,qt,Q240642,,not_applicable,
-methotrexate,qt,Q422232,,not_applicable,
-warfarin,qt,Q113368879,,not_applicable,
-thalidomide,qt,Q203174,,not_applicable,
-phenytoin,qt,Q410400,,not_applicable,
-mycophenolate,qt,Q420553,,not_applicable,
-methimazole,qt,Q419663,,not_applicable,
-amoxicillin,qt,Q201928,,control_no_link_expected,
-atorvastatin,qt,Q668093,,control_no_link_expected,
-omeprazole,qt,Q422210,,control_no_link_expected,
-doxylamine,qt,Q423390,,control_no_link_expected,
-pyridoxine,qt,Q423746,,control_no_link_expected,
-paracetamol,qt,Q57055,,control_no_link_expected,
-loratadine,qt,Q424049,,control_no_link_expected,
-famotidine,qt,Q411159,,control_no_link_expected,
-loperamide,qt,Q423751,,control_no_link_expected,
-citalopram,qt,Q409672,Known risk of TdP (CredibleMeds),absent,
-azithromycin,qt,Q165399,Known risk of TdP (CredibleMeds),absent,
-levofloxacin,qt,Q424193,Known risk of TdP (CredibleMeds),absent,
-ondansetron,qt,Q410011,Known risk of TdP (CredibleMeds),absent,
-haloperidol,qt,Q251347,Known risk of TdP (CredibleMeds),absent,
-methadone,qt,Q179996,Known risk of TdP (CredibleMeds),absent,
-hydroxychloroquine,qt,Q421094,Known risk of TdP (CredibleMeds),absent,
-domperidone,qt,Q424238,Known risk of TdP (CredibleMeds),absent,
-carbamazepine,qt,Q410412,,not_applicable,
-oxcarbazepine,qt,Q176301,,not_applicable,
-lamotrigine,qt,Q410346,,not_applicable,
-allopurinol,qt,Q412486,,not_applicable,
-abacavir,qt,Q304330,,not_applicable,
-codeine,qt,Q174723,,not_applicable,
-tramadol,qt,Q407592,,not_applicable,
+drug,topic,wikidata_qid,risk_basis,property,role,is_control,in_denominator,has_link,linked_values,linked_labels,wikidata_status
+rasburicase,g6pd,Q3088229,Contraindicated,P10946,primary,False,True,False,,,absent
+methylene_blue,g6pd,Q422134,Contraindicated,P10946,primary,False,True,False,,,absent
+pegloticase,g6pd,Q7160794,Contraindicated,P10946,primary,False,True,False,,,absent
+dapsone,g6pd,Q422226,Avoid in deficient patients,P10946,primary,False,False,False,,,absent
+nitrofurantoin,g6pd,Q422669,Use with caution,P10946,primary,False,False,False,,,absent
+phenazopyridine,g6pd,Q3114549,Use with caution,P10946,primary,False,False,False,,,absent
+primaquine,g6pd,Q419834,Contraindicated,P10946,primary,False,True,False,,,absent
+toluidine_blue,g6pd,Q80868,Contraindicated,P10946,primary,False,True,False,,,absent
+isotretinoin,g6pd,Q287029,,P10946,primary,False,False,False,,,not_applicable
+valproic_acid,g6pd,Q240642,,P10946,primary,False,False,False,,,not_applicable
+methotrexate,g6pd,Q422232,,P10946,primary,False,False,False,,,not_applicable
+warfarin,g6pd,Q113368879,,P10946,primary,False,False,False,,,not_applicable
+thalidomide,g6pd,Q203174,,P10946,primary,False,False,False,,,not_applicable
+phenytoin,g6pd,Q410400,,P10946,primary,False,False,False,,,not_applicable
+mycophenolate,g6pd,Q420553,,P10946,primary,False,False,False,,,not_applicable
+methimazole,g6pd,Q419663,,P10946,primary,False,False,False,,,not_applicable
+amoxicillin,g6pd,Q201928,,P10946,primary,True,False,False,,,not_applicable
+atorvastatin,g6pd,Q668093,,P10946,primary,True,False,False,,,not_applicable
+omeprazole,g6pd,Q422210,,P10946,primary,True,False,False,,,not_applicable
+doxylamine,g6pd,Q423390,,P10946,primary,True,False,False,,,not_applicable
+pyridoxine,g6pd,Q423746,,P10946,primary,True,False,False,,,not_applicable
+paracetamol,g6pd,Q57055,,P10946,primary,True,False,False,,,not_applicable
+loratadine,g6pd,Q424049,,P10946,primary,True,False,False,,,not_applicable
+famotidine,g6pd,Q411159,,P10946,primary,True,False,False,,,not_applicable
+loperamide,g6pd,Q423751,,P10946,primary,True,False,False,,,not_applicable
+citalopram,g6pd,Q409672,,P10946,primary,False,False,False,,,not_applicable
+azithromycin,g6pd,Q165399,,P10946,primary,False,False,False,,,not_applicable
+levofloxacin,g6pd,Q424193,,P10946,primary,False,False,False,,,not_applicable
+ondansetron,g6pd,Q410011,,P10946,primary,False,False,False,,,not_applicable
+haloperidol,g6pd,Q251347,,P10946,primary,False,False,False,,,not_applicable
+methadone,g6pd,Q179996,,P10946,primary,False,False,False,,,not_applicable
+hydroxychloroquine,g6pd,Q421094,,P10946,primary,False,False,False,,,not_applicable
+domperidone,g6pd,Q424238,,P10946,primary,False,False,False,,,not_applicable
+rasburicase,g6pd,Q3088229,Contraindicated,P1909,context,False,True,False,,,absent
+methylene_blue,g6pd,Q422134,Contraindicated,P1909,context,False,True,False,,,absent
+pegloticase,g6pd,Q7160794,Contraindicated,P1909,context,False,True,False,,,absent
+dapsone,g6pd,Q422226,Avoid in deficient patients,P1909,context,False,False,False,,,absent
+nitrofurantoin,g6pd,Q422669,Use with caution,P1909,context,False,False,False,,,absent
+phenazopyridine,g6pd,Q3114549,Use with caution,P1909,context,False,False,False,,,absent
+primaquine,g6pd,Q419834,Contraindicated,P1909,context,False,True,False,,,absent
+toluidine_blue,g6pd,Q80868,Contraindicated,P1909,context,False,True,False,,,absent
+isotretinoin,g6pd,Q287029,,P1909,context,False,False,False,,,not_applicable
+valproic_acid,g6pd,Q240642,,P1909,context,False,False,False,,,not_applicable
+methotrexate,g6pd,Q422232,,P1909,context,False,False,False,,,not_applicable
+warfarin,g6pd,Q113368879,,P1909,context,False,False,False,,,not_applicable
+thalidomide,g6pd,Q203174,,P1909,context,False,False,False,,,not_applicable
+phenytoin,g6pd,Q410400,,P1909,context,False,False,False,,,not_applicable
+mycophenolate,g6pd,Q420553,,P1909,context,False,False,False,,,not_applicable
+methimazole,g6pd,Q419663,,P1909,context,False,False,False,,,not_applicable
+amoxicillin,g6pd,Q201928,,P1909,context,True,False,False,,,not_applicable
+atorvastatin,g6pd,Q668093,,P1909,context,True,False,False,,,not_applicable
+omeprazole,g6pd,Q422210,,P1909,context,True,False,False,,,not_applicable
+doxylamine,g6pd,Q423390,,P1909,context,True,False,False,,,not_applicable
+pyridoxine,g6pd,Q423746,,P1909,context,True,False,False,,,not_applicable
+paracetamol,g6pd,Q57055,,P1909,context,True,False,False,,,not_applicable
+loratadine,g6pd,Q424049,,P1909,context,True,False,False,,,not_applicable
+famotidine,g6pd,Q411159,,P1909,context,True,False,False,,,not_applicable
+loperamide,g6pd,Q423751,,P1909,context,True,False,False,,,not_applicable
+citalopram,g6pd,Q409672,,P1909,context,False,False,False,,,not_applicable
+azithromycin,g6pd,Q165399,,P1909,context,False,False,False,,,not_applicable
+levofloxacin,g6pd,Q424193,,P1909,context,False,False,False,,,not_applicable
+ondansetron,g6pd,Q410011,,P1909,context,False,False,False,,,not_applicable
+haloperidol,g6pd,Q251347,,P1909,context,False,False,False,,,not_applicable
+methadone,g6pd,Q179996,,P1909,context,False,False,False,,,not_applicable
+hydroxychloroquine,g6pd,Q421094,,P1909,context,False,False,False,,,not_applicable
+domperidone,g6pd,Q424238,,P1909,context,False,False,False,,,not_applicable
+rasburicase,g6pd,Q3088229,Contraindicated,P769,context,False,True,False,,,absent
+methylene_blue,g6pd,Q422134,Contraindicated,P769,context,False,True,False,,,absent
+pegloticase,g6pd,Q7160794,Contraindicated,P769,context,False,True,False,,,absent
+dapsone,g6pd,Q422226,Avoid in deficient patients,P769,context,False,False,False,,,absent
+nitrofurantoin,g6pd,Q422669,Use with caution,P769,context,False,False,False,,,absent
+phenazopyridine,g6pd,Q3114549,Use with caution,P769,context,False,False,False,,,absent
+primaquine,g6pd,Q419834,Contraindicated,P769,context,False,True,False,,,absent
+toluidine_blue,g6pd,Q80868,Contraindicated,P769,context,False,True,False,,,absent
+isotretinoin,g6pd,Q287029,,P769,context,False,False,False,,,not_applicable
+valproic_acid,g6pd,Q240642,,P769,context,False,False,False,,,not_applicable
+methotrexate,g6pd,Q422232,,P769,context,False,False,False,,,not_applicable
+warfarin,g6pd,Q113368879,,P769,context,False,False,False,,,not_applicable
+thalidomide,g6pd,Q203174,,P769,context,False,False,False,,,not_applicable
+phenytoin,g6pd,Q410400,,P769,context,False,False,False,,,not_applicable
+mycophenolate,g6pd,Q420553,,P769,context,False,False,False,,,not_applicable
+methimazole,g6pd,Q419663,,P769,context,False,False,False,,,not_applicable
+amoxicillin,g6pd,Q201928,,P769,context,True,False,False,,,not_applicable
+atorvastatin,g6pd,Q668093,,P769,context,True,False,False,,,not_applicable
+omeprazole,g6pd,Q422210,,P769,context,True,False,False,,,not_applicable
+doxylamine,g6pd,Q423390,,P769,context,True,False,False,,,not_applicable
+pyridoxine,g6pd,Q423746,,P769,context,True,False,False,,,not_applicable
+paracetamol,g6pd,Q57055,,P769,context,True,False,False,,,not_applicable
+loratadine,g6pd,Q424049,,P769,context,True,False,False,,,not_applicable
+famotidine,g6pd,Q411159,,P769,context,True,False,False,,,not_applicable
+loperamide,g6pd,Q423751,,P769,context,True,False,False,,,not_applicable
+citalopram,g6pd,Q409672,,P769,context,False,False,False,,,not_applicable
+azithromycin,g6pd,Q165399,,P769,context,False,False,False,,,not_applicable
+levofloxacin,g6pd,Q424193,,P769,context,False,False,False,,,not_applicable
+ondansetron,g6pd,Q410011,,P769,context,False,False,False,,,not_applicable
+haloperidol,g6pd,Q251347,,P769,context,False,False,False,,,not_applicable
+methadone,g6pd,Q179996,,P769,context,False,False,False,,,not_applicable
+hydroxychloroquine,g6pd,Q421094,,P769,context,False,False,False,,,not_applicable
+domperidone,g6pd,Q424238,,P769,context,False,False,False,,,not_applicable
+rasburicase,teratogenicity,Q3088229,,P10946,primary,False,False,False,,,not_applicable
+methylene_blue,teratogenicity,Q422134,,P10946,primary,False,False,False,,,not_applicable
+pegloticase,teratogenicity,Q7160794,,P10946,primary,False,False,False,,,not_applicable
+dapsone,teratogenicity,Q422226,,P10946,primary,False,False,False,,,not_applicable
+nitrofurantoin,teratogenicity,Q422669,,P10946,primary,False,False,False,,,not_applicable
+phenazopyridine,teratogenicity,Q3114549,,P10946,primary,False,False,False,,,not_applicable
+primaquine,teratogenicity,Q419834,,P10946,primary,False,False,False,,,not_applicable
+toluidine_blue,teratogenicity,Q80868,,P10946,primary,False,False,False,,,not_applicable
+isotretinoin,teratogenicity,Q287029,Contraindicated (iPLEDGE/REMS),P10946,primary,False,True,False,,,absent
+valproic_acid,teratogenicity,Q240642,Contraindicated (FDA black box),P10946,primary,False,True,False,,,absent
+methotrexate,teratogenicity,Q422232,Contraindicated (PLLR),P10946,primary,False,True,False,,,absent
+warfarin,teratogenicity,Q113368879,Contraindicated (1st tri; black box 2nd/3rd),P10946,primary,False,True,False,,,absent
+thalidomide,teratogenicity,Q203174,Contraindicated (REMS),P10946,primary,False,True,False,,,absent
+phenytoin,teratogenicity,Q410400,Contraindicated (fetal hydantoin syndrome),P10946,primary,False,True,False,,,absent
+mycophenolate,teratogenicity,Q420553,Contraindicated (REMS),P10946,primary,False,True,False,,,absent
+methimazole,teratogenicity,Q419663,Contraindicated (methimazole embryopathy),P10946,primary,False,True,False,,,absent
+amoxicillin,teratogenicity,Q201928,,P10946,primary,True,False,False,,,not_applicable
+atorvastatin,teratogenicity,Q668093,,P10946,primary,True,False,False,,,not_applicable
+omeprazole,teratogenicity,Q422210,,P10946,primary,True,False,False,,,not_applicable
+doxylamine,teratogenicity,Q423390,,P10946,primary,True,False,False,,,not_applicable
+pyridoxine,teratogenicity,Q423746,,P10946,primary,True,False,False,,,not_applicable
+paracetamol,teratogenicity,Q57055,,P10946,primary,True,False,False,,,not_applicable
+loratadine,teratogenicity,Q424049,,P10946,primary,True,False,False,,,not_applicable
+famotidine,teratogenicity,Q411159,,P10946,primary,True,False,False,,,not_applicable
+loperamide,teratogenicity,Q423751,,P10946,primary,True,False,False,,,not_applicable
+citalopram,teratogenicity,Q409672,,P10946,primary,False,False,False,,,not_applicable
+azithromycin,teratogenicity,Q165399,,P10946,primary,False,False,False,,,not_applicable
+levofloxacin,teratogenicity,Q424193,,P10946,primary,False,False,False,,,not_applicable
+ondansetron,teratogenicity,Q410011,,P10946,primary,False,False,False,,,not_applicable
+haloperidol,teratogenicity,Q251347,,P10946,primary,False,False,False,,,not_applicable
+methadone,teratogenicity,Q179996,,P10946,primary,False,False,False,,,not_applicable
+hydroxychloroquine,teratogenicity,Q421094,,P10946,primary,False,False,False,,,not_applicable
+domperidone,teratogenicity,Q424238,,P10946,primary,False,False,False,,,not_applicable
+rasburicase,teratogenicity,Q3088229,,P3489,primary,False,False,False,,,not_applicable
+methylene_blue,teratogenicity,Q422134,,P3489,primary,False,False,True,Q28123619,US pregnancy category X,not_applicable
+pegloticase,teratogenicity,Q7160794,,P3489,primary,False,False,True,Q28123617,US pregnancy category C,not_applicable
+dapsone,teratogenicity,Q422226,,P3489,primary,False,False,True,Q3679233|Q28123617,Australian pregnancy category B2|US pregnancy category C,not_applicable
+nitrofurantoin,teratogenicity,Q422669,,P3489,primary,False,False,True,Q3679189|Q28123616,Australian pregnancy category A|US pregnancy category B,not_applicable
+phenazopyridine,teratogenicity,Q3114549,,P3489,primary,False,False,False,,,not_applicable
+primaquine,teratogenicity,Q419834,,P3489,primary,False,False,False,,,not_applicable
+toluidine_blue,teratogenicity,Q80868,,P3489,primary,False,False,False,,,not_applicable
+isotretinoin,teratogenicity,Q287029,Contraindicated (iPLEDGE/REMS),P3489,primary,False,True,True,Q3679561|Q28123619,Australian pregnancy category X|US pregnancy category X,present_correct
+valproic_acid,teratogenicity,Q240642,Contraindicated (FDA black box),P3489,primary,False,True,True,Q3679274|Q28123619,Australian pregnancy category D|US pregnancy category X,present_correct
+methotrexate,teratogenicity,Q422232,Contraindicated (PLLR),P3489,primary,False,True,True,Q3679274|Q28123619,Australian pregnancy category D|US pregnancy category X,present_correct
+warfarin,teratogenicity,Q113368879,Contraindicated (1st tri; black box 2nd/3rd),P3489,primary,False,True,True,Q3679274|Q28123619,Australian pregnancy category D|US pregnancy category X,present_correct
+thalidomide,teratogenicity,Q203174,Contraindicated (REMS),P3489,primary,False,True,True,Q3679561|Q28123619,Australian pregnancy category X|US pregnancy category X,present_correct
+phenytoin,teratogenicity,Q410400,Contraindicated (fetal hydantoin syndrome),P3489,primary,False,True,True,Q3679274|Q28123618,Australian pregnancy category D|US pregnancy category D,present_correct
+mycophenolate,teratogenicity,Q420553,Contraindicated (REMS),P3489,primary,False,True,True,Q3679274|Q28123618,Australian pregnancy category D|US pregnancy category D,present_correct
+methimazole,teratogenicity,Q419663,Contraindicated (methimazole embryopathy),P3489,primary,False,True,False,,,absent
+amoxicillin,teratogenicity,Q201928,,P3489,primary,True,False,True,Q3679189|Q28123616,Australian pregnancy category A|US pregnancy category B,not_applicable
+atorvastatin,teratogenicity,Q668093,,P3489,primary,True,False,True,Q3679274|Q28123619,Australian pregnancy category D|US pregnancy category X,not_applicable
+omeprazole,teratogenicity,Q422210,,P3489,primary,True,False,True,Q3679234|Q28123617,Australian pregnancy category B3|US pregnancy category C,not_applicable
+doxylamine,teratogenicity,Q423390,,P3489,primary,True,False,True,Q3679189|Q28123616,Australian pregnancy category A|US pregnancy category B,not_applicable
+pyridoxine,teratogenicity,Q423746,,P3489,primary,True,False,True,Q28123615,US pregnancy category A,not_applicable
+paracetamol,teratogenicity,Q57055,,P3489,primary,True,False,True,Q3679189|Q28123617,Australian pregnancy category A|US pregnancy category C,not_applicable
+loratadine,teratogenicity,Q424049,,P3489,primary,True,False,True,Q3679232|Q28123616,Australian pregnancy category B1|US pregnancy category B,not_applicable
+famotidine,teratogenicity,Q411159,,P3489,primary,True,False,True,Q3679232|Q28123616,Australian pregnancy category B1|US pregnancy category B,not_applicable
+loperamide,teratogenicity,Q423751,,P3489,primary,True,False,True,Q3679234|Q28123617,Australian pregnancy category B3|US pregnancy category C,not_applicable
+citalopram,teratogenicity,Q409672,,P3489,primary,False,False,True,Q28123617,US pregnancy category C,not_applicable
+azithromycin,teratogenicity,Q165399,,P3489,primary,False,False,True,Q3679232|Q28123616,Australian pregnancy category B1|US pregnancy category B,not_applicable
+levofloxacin,teratogenicity,Q424193,,P3489,primary,False,False,True,Q28123617,US pregnancy category C,not_applicable
+ondansetron,teratogenicity,Q410011,,P3489,primary,False,False,True,Q3679232|Q28123616,Australian pregnancy category B1|US pregnancy category B,not_applicable
+haloperidol,teratogenicity,Q251347,,P3489,primary,False,False,True,Q3679261|Q28123617,Australian pregnancy category C|US pregnancy category C,not_applicable
+methadone,teratogenicity,Q179996,,P3489,primary,False,False,True,Q3679261|Q28123617,Australian pregnancy category C|US pregnancy category C,not_applicable
+hydroxychloroquine,teratogenicity,Q421094,,P3489,primary,False,False,True,Q3679274|Q28123617,Australian pregnancy category D|US pregnancy category C,not_applicable
+domperidone,teratogenicity,Q424238,,P3489,primary,False,False,False,,,not_applicable
+rasburicase,teratogenicity,Q3088229,,P1909,context,False,False,False,,,not_applicable
+methylene_blue,teratogenicity,Q422134,,P1909,context,False,False,False,,,not_applicable
+pegloticase,teratogenicity,Q7160794,,P1909,context,False,False,False,,,not_applicable
+dapsone,teratogenicity,Q422226,,P1909,context,False,False,False,,,not_applicable
+nitrofurantoin,teratogenicity,Q422669,,P1909,context,False,False,False,,,not_applicable
+phenazopyridine,teratogenicity,Q3114549,,P1909,context,False,False,False,,,not_applicable
+primaquine,teratogenicity,Q419834,,P1909,context,False,False,False,,,not_applicable
+toluidine_blue,teratogenicity,Q80868,,P1909,context,False,False,False,,,not_applicable
+isotretinoin,teratogenicity,Q287029,Contraindicated (iPLEDGE/REMS),P1909,context,False,True,False,,,absent
+valproic_acid,teratogenicity,Q240642,Contraindicated (FDA black box),P1909,context,False,True,False,,,absent
+methotrexate,teratogenicity,Q422232,Contraindicated (PLLR),P1909,context,False,True,False,,,absent
+warfarin,teratogenicity,Q113368879,Contraindicated (1st tri; black box 2nd/3rd),P1909,context,False,True,False,,,absent
+thalidomide,teratogenicity,Q203174,Contraindicated (REMS),P1909,context,False,True,False,,,absent
+phenytoin,teratogenicity,Q410400,Contraindicated (fetal hydantoin syndrome),P1909,context,False,True,False,,,absent
+mycophenolate,teratogenicity,Q420553,Contraindicated (REMS),P1909,context,False,True,False,,,absent
+methimazole,teratogenicity,Q419663,Contraindicated (methimazole embryopathy),P1909,context,False,True,False,,,absent
+amoxicillin,teratogenicity,Q201928,,P1909,context,True,False,False,,,not_applicable
+atorvastatin,teratogenicity,Q668093,,P1909,context,True,False,False,,,not_applicable
+omeprazole,teratogenicity,Q422210,,P1909,context,True,False,False,,,not_applicable
+doxylamine,teratogenicity,Q423390,,P1909,context,True,False,False,,,not_applicable
+pyridoxine,teratogenicity,Q423746,,P1909,context,True,False,False,,,not_applicable
+paracetamol,teratogenicity,Q57055,,P1909,context,True,False,False,,,not_applicable
+loratadine,teratogenicity,Q424049,,P1909,context,True,False,False,,,not_applicable
+famotidine,teratogenicity,Q411159,,P1909,context,True,False,False,,,not_applicable
+loperamide,teratogenicity,Q423751,,P1909,context,True,False,False,,,not_applicable
+citalopram,teratogenicity,Q409672,,P1909,context,False,False,False,,,not_applicable
+azithromycin,teratogenicity,Q165399,,P1909,context,False,False,False,,,not_applicable
+levofloxacin,teratogenicity,Q424193,,P1909,context,False,False,False,,,not_applicable
+ondansetron,teratogenicity,Q410011,,P1909,context,False,False,False,,,not_applicable
+haloperidol,teratogenicity,Q251347,,P1909,context,False,False,False,,,not_applicable
+methadone,teratogenicity,Q179996,,P1909,context,False,False,False,,,not_applicable
+hydroxychloroquine,teratogenicity,Q421094,,P1909,context,False,False,False,,,not_applicable
+domperidone,teratogenicity,Q424238,,P1909,context,False,False,False,,,not_applicable
+rasburicase,teratogenicity,Q3088229,,P769,context,False,False,False,,,not_applicable
+methylene_blue,teratogenicity,Q422134,,P769,context,False,False,False,,,not_applicable
+pegloticase,teratogenicity,Q7160794,,P769,context,False,False,False,,,not_applicable
+dapsone,teratogenicity,Q422226,,P769,context,False,False,False,,,not_applicable
+nitrofurantoin,teratogenicity,Q422669,,P769,context,False,False,False,,,not_applicable
+phenazopyridine,teratogenicity,Q3114549,,P769,context,False,False,False,,,not_applicable
+primaquine,teratogenicity,Q419834,,P769,context,False,False,False,,,not_applicable
+toluidine_blue,teratogenicity,Q80868,,P769,context,False,False,False,,,not_applicable
+isotretinoin,teratogenicity,Q287029,Contraindicated (iPLEDGE/REMS),P769,context,False,True,False,,,absent
+valproic_acid,teratogenicity,Q240642,Contraindicated (FDA black box),P769,context,False,True,False,,,absent
+methotrexate,teratogenicity,Q422232,Contraindicated (PLLR),P769,context,False,True,False,,,absent
+warfarin,teratogenicity,Q113368879,Contraindicated (1st tri; black box 2nd/3rd),P769,context,False,True,False,,,absent
+thalidomide,teratogenicity,Q203174,Contraindicated (REMS),P769,context,False,True,False,,,absent
+phenytoin,teratogenicity,Q410400,Contraindicated (fetal hydantoin syndrome),P769,context,False,True,False,,,absent
+mycophenolate,teratogenicity,Q420553,Contraindicated (REMS),P769,context,False,True,False,,,absent
+methimazole,teratogenicity,Q419663,Contraindicated (methimazole embryopathy),P769,context,False,True,False,,,absent
+amoxicillin,teratogenicity,Q201928,,P769,context,True,False,False,,,not_applicable
+atorvastatin,teratogenicity,Q668093,,P769,context,True,False,False,,,not_applicable
+omeprazole,teratogenicity,Q422210,,P769,context,True,False,False,,,not_applicable
+doxylamine,teratogenicity,Q423390,,P769,context,True,False,False,,,not_applicable
+pyridoxine,teratogenicity,Q423746,,P769,context,True,False,False,,,not_applicable
+paracetamol,teratogenicity,Q57055,,P769,context,True,False,False,,,not_applicable
+loratadine,teratogenicity,Q424049,,P769,context,True,False,False,,,not_applicable
+famotidine,teratogenicity,Q411159,,P769,context,True,False,False,,,not_applicable
+loperamide,teratogenicity,Q423751,,P769,context,True,False,False,,,not_applicable
+citalopram,teratogenicity,Q409672,,P769,context,False,False,False,,,not_applicable
+azithromycin,teratogenicity,Q165399,,P769,context,False,False,False,,,not_applicable
+levofloxacin,teratogenicity,Q424193,,P769,context,False,False,False,,,not_applicable
+ondansetron,teratogenicity,Q410011,,P769,context,False,False,False,,,not_applicable
+haloperidol,teratogenicity,Q251347,,P769,context,False,False,False,,,not_applicable
+methadone,teratogenicity,Q179996,,P769,context,False,False,False,,,not_applicable
+hydroxychloroquine,teratogenicity,Q421094,,P769,context,False,False,False,,,not_applicable
+domperidone,teratogenicity,Q424238,,P769,context,False,False,False,,,not_applicable
+rasburicase,qt,Q3088229,,P10946,primary,False,False,False,,,not_applicable
+methylene_blue,qt,Q422134,,P10946,primary,False,False,False,,,not_applicable
+pegloticase,qt,Q7160794,,P10946,primary,False,False,False,,,not_applicable
+dapsone,qt,Q422226,,P10946,primary,False,False,False,,,not_applicable
+nitrofurantoin,qt,Q422669,,P10946,primary,False,False,False,,,not_applicable
+phenazopyridine,qt,Q3114549,,P10946,primary,False,False,False,,,not_applicable
+primaquine,qt,Q419834,,P10946,primary,False,False,False,,,not_applicable
+toluidine_blue,qt,Q80868,,P10946,primary,False,False,False,,,not_applicable
+isotretinoin,qt,Q287029,,P10946,primary,False,False,False,,,not_applicable
+valproic_acid,qt,Q240642,,P10946,primary,False,False,False,,,not_applicable
+methotrexate,qt,Q422232,,P10946,primary,False,False,False,,,not_applicable
+warfarin,qt,Q113368879,,P10946,primary,False,False,False,,,not_applicable
+thalidomide,qt,Q203174,,P10946,primary,False,False,False,,,not_applicable
+phenytoin,qt,Q410400,,P10946,primary,False,False,False,,,not_applicable
+mycophenolate,qt,Q420553,,P10946,primary,False,False,False,,,not_applicable
+methimazole,qt,Q419663,,P10946,primary,False,False,False,,,not_applicable
+amoxicillin,qt,Q201928,,P10946,primary,True,False,False,,,not_applicable
+atorvastatin,qt,Q668093,,P10946,primary,True,False,False,,,not_applicable
+omeprazole,qt,Q422210,,P10946,primary,True,False,False,,,not_applicable
+doxylamine,qt,Q423390,,P10946,primary,True,False,False,,,not_applicable
+pyridoxine,qt,Q423746,,P10946,primary,True,False,False,,,not_applicable
+paracetamol,qt,Q57055,,P10946,primary,True,False,False,,,not_applicable
+loratadine,qt,Q424049,,P10946,primary,True,False,False,,,not_applicable
+famotidine,qt,Q411159,,P10946,primary,True,False,False,,,not_applicable
+loperamide,qt,Q423751,,P10946,primary,True,False,False,,,not_applicable
+citalopram,qt,Q409672,Known risk of TdP (CredibleMeds),P10946,primary,False,False,False,,,absent
+azithromycin,qt,Q165399,Known risk of TdP (CredibleMeds),P10946,primary,False,False,False,,,absent
+levofloxacin,qt,Q424193,Known risk of TdP (CredibleMeds),P10946,primary,False,False,False,,,absent
+ondansetron,qt,Q410011,Known risk of TdP (CredibleMeds),P10946,primary,False,False,False,,,absent
+haloperidol,qt,Q251347,Known risk of TdP (CredibleMeds),P10946,primary,False,False,False,,,absent
+methadone,qt,Q179996,Known risk of TdP (CredibleMeds),P10946,primary,False,False,False,,,absent
+hydroxychloroquine,qt,Q421094,Known risk of TdP (CredibleMeds),P10946,primary,False,False,False,,,absent
+domperidone,qt,Q424238,Known risk of TdP (CredibleMeds),P10946,primary,False,False,False,,,absent
+rasburicase,qt,Q3088229,,P1909,context,False,False,False,,,not_applicable
+methylene_blue,qt,Q422134,,P1909,context,False,False,False,,,not_applicable
+pegloticase,qt,Q7160794,,P1909,context,False,False,False,,,not_applicable
+dapsone,qt,Q422226,,P1909,context,False,False,False,,,not_applicable
+nitrofurantoin,qt,Q422669,,P1909,context,False,False,False,,,not_applicable
+phenazopyridine,qt,Q3114549,,P1909,context,False,False,False,,,not_applicable
+primaquine,qt,Q419834,,P1909,context,False,False,False,,,not_applicable
+toluidine_blue,qt,Q80868,,P1909,context,False,False,False,,,not_applicable
+isotretinoin,qt,Q287029,,P1909,context,False,False,False,,,not_applicable
+valproic_acid,qt,Q240642,,P1909,context,False,False,False,,,not_applicable
+methotrexate,qt,Q422232,,P1909,context,False,False,False,,,not_applicable
+warfarin,qt,Q113368879,,P1909,context,False,False,False,,,not_applicable
+thalidomide,qt,Q203174,,P1909,context,False,False,False,,,not_applicable
+phenytoin,qt,Q410400,,P1909,context,False,False,False,,,not_applicable
+mycophenolate,qt,Q420553,,P1909,context,False,False,False,,,not_applicable
+methimazole,qt,Q419663,,P1909,context,False,False,False,,,not_applicable
+amoxicillin,qt,Q201928,,P1909,context,True,False,False,,,not_applicable
+atorvastatin,qt,Q668093,,P1909,context,True,False,False,,,not_applicable
+omeprazole,qt,Q422210,,P1909,context,True,False,False,,,not_applicable
+doxylamine,qt,Q423390,,P1909,context,True,False,False,,,not_applicable
+pyridoxine,qt,Q423746,,P1909,context,True,False,False,,,not_applicable
+paracetamol,qt,Q57055,,P1909,context,True,False,False,,,not_applicable
+loratadine,qt,Q424049,,P1909,context,True,False,False,,,not_applicable
+famotidine,qt,Q411159,,P1909,context,True,False,False,,,not_applicable
+loperamide,qt,Q423751,,P1909,context,True,False,False,,,not_applicable
+citalopram,qt,Q409672,Known risk of TdP (CredibleMeds),P1909,context,False,False,False,,,absent
+azithromycin,qt,Q165399,Known risk of TdP (CredibleMeds),P1909,context,False,False,False,,,absent
+levofloxacin,qt,Q424193,Known risk of TdP (CredibleMeds),P1909,context,False,False,False,,,absent
+ondansetron,qt,Q410011,Known risk of TdP (CredibleMeds),P1909,context,False,False,False,,,absent
+haloperidol,qt,Q251347,Known risk of TdP (CredibleMeds),P1909,context,False,False,False,,,absent
+methadone,qt,Q179996,Known risk of TdP (CredibleMeds),P1909,context,False,False,False,,,absent
+hydroxychloroquine,qt,Q421094,Known risk of TdP (CredibleMeds),P1909,context,False,False,False,,,absent
+domperidone,qt,Q424238,Known risk of TdP (CredibleMeds),P1909,context,False,False,False,,,absent
+rasburicase,qt,Q3088229,,P769,context,False,False,False,,,not_applicable
+methylene_blue,qt,Q422134,,P769,context,False,False,False,,,not_applicable
+pegloticase,qt,Q7160794,,P769,context,False,False,False,,,not_applicable
+dapsone,qt,Q422226,,P769,context,False,False,False,,,not_applicable
+nitrofurantoin,qt,Q422669,,P769,context,False,False,False,,,not_applicable
+phenazopyridine,qt,Q3114549,,P769,context,False,False,False,,,not_applicable
+primaquine,qt,Q419834,,P769,context,False,False,False,,,not_applicable
+toluidine_blue,qt,Q80868,,P769,context,False,False,False,,,not_applicable
+isotretinoin,qt,Q287029,,P769,context,False,False,False,,,not_applicable
+valproic_acid,qt,Q240642,,P769,context,False,False,False,,,not_applicable
+methotrexate,qt,Q422232,,P769,context,False,False,False,,,not_applicable
+warfarin,qt,Q113368879,,P769,context,False,False,False,,,not_applicable
+thalidomide,qt,Q203174,,P769,context,False,False,False,,,not_applicable
+phenytoin,qt,Q410400,,P769,context,False,False,False,,,not_applicable
+mycophenolate,qt,Q420553,,P769,context,False,False,False,,,not_applicable
+methimazole,qt,Q419663,,P769,context,False,False,False,,,not_applicable
+amoxicillin,qt,Q201928,,P769,context,True,False,False,,,not_applicable
+atorvastatin,qt,Q668093,,P769,context,True,False,False,,,not_applicable
+omeprazole,qt,Q422210,,P769,context,True,False,False,,,not_applicable
+doxylamine,qt,Q423390,,P769,context,True,False,False,,,not_applicable
+pyridoxine,qt,Q423746,,P769,context,True,False,False,,,not_applicable
+paracetamol,qt,Q57055,,P769,context,True,False,False,,,not_applicable
+loratadine,qt,Q424049,,P769,context,True,False,False,,,not_applicable
+famotidine,qt,Q411159,,P769,context,True,False,False,,,not_applicable
+loperamide,qt,Q423751,,P769,context,True,False,False,,,not_applicable
+citalopram,qt,Q409672,Known risk of TdP (CredibleMeds),P769,context,False,False,False,,,absent
+azithromycin,qt,Q165399,Known risk of TdP (CredibleMeds),P769,context,False,False,False,,,absent
+levofloxacin,qt,Q424193,Known risk of TdP (CredibleMeds),P769,context,False,False,False,,,absent
+ondansetron,qt,Q410011,Known risk of TdP (CredibleMeds),P769,context,False,False,False,,,absent
+haloperidol,qt,Q251347,Known risk of TdP (CredibleMeds),P769,context,False,False,False,,,absent
+methadone,qt,Q179996,Known risk of TdP (CredibleMeds),P769,context,False,False,False,,,absent
+hydroxychloroquine,qt,Q421094,Known risk of TdP (CredibleMeds),P769,context,False,False,False,,,absent
+domperidone,qt,Q424238,Known risk of TdP (CredibleMeds),P769,context,False,False,False,,,absent

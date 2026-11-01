@@ -1,0 +1,19 @@
+fit,event,probability
+"HalfNormal(5.7735) bambi default, primary",all three pooled ORs below 1,0.5895
+"HalfNormal(5.7735) bambi default, primary",all nine language by domain ORs below 1,0.32
+"HalfNormal(5.7735) bambi default, primary",the eight language by domain ORs other than Russian QT all below 1,0.6678333333333333
+"HalfNormal(5.7735) bambi default, primary",ar: all three domain ORs below 1,0.8348333333333333
+"HalfNormal(5.7735) bambi default, primary",he: all three domain ORs below 1,0.812
+"HalfNormal(5.7735) bambi default, primary",ru: all three domain ORs below 1,0.4515
+HalfNormal(0.5),all three pooled ORs below 1,0.9361666666666667
+HalfNormal(0.5),all nine language by domain ORs below 1,0.6831666666666667
+HalfNormal(0.5),the eight language by domain ORs other than Russian QT all below 1,0.8845
+HalfNormal(0.5),ar: all three domain ORs below 1,0.9711666666666666
+HalfNormal(0.5),he: all three domain ORs below 1,0.9388333333333333
+HalfNormal(0.5),ru: all three domain ORs below 1,0.7356666666666667
+HalfNormal(1),all three pooled ORs below 1,0.841
+HalfNormal(1),all nine language by domain ORs below 1,0.45716666666666667
+HalfNormal(1),the eight language by domain ORs other than Russian QT all below 1,0.7891666666666667
+HalfNormal(1),ar: all three domain ORs below 1,0.9203333333333333
+HalfNormal(1),he: all three domain ORs below 1,0.8788333333333334
+HalfNormal(1),ru: all three domain ORs below 1,0.5478333333333333

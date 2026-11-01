@@ -1,0 +1,45 @@
+scope,topic,property,role,targets,n_total,n_with_link,proportion,measured_on,note
+denominator_contraindicated,g6pd,P10946,primary,Q848343,5,0,0.0,2026-10-02,rule pending Maya confirmation
+denominator_contraindicated,g6pd,P1909,context,Q848343,5,0,0.0,2026-10-02,rule pending Maya confirmation
+denominator_contraindicated,g6pd,P769,context,Q848343,5,0,0.0,2026-10-02,rule pending Maya confirmation
+denominator_contraindicated,teratogenicity,P10946,primary,Q11995,8,0,0.0,2026-10-02,rule pending Maya confirmation
+denominator_contraindicated,teratogenicity,P3489,primary,any,8,7,0.875,2026-10-02,rule pending Maya confirmation
+denominator_contraindicated,teratogenicity,P1909,context,Q11995,8,0,0.0,2026-10-02,rule pending Maya confirmation
+denominator_contraindicated,teratogenicity,P769,context,Q11995,8,0,0.0,2026-10-02,rule pending Maya confirmation
+qt_positives_separate,qt,P10946,primary,Q1625433|Q653924,8,0,0.0,2026-10-02,"Known Risk of TdP, not a contraindication"
+qt_positives_separate,qt,P1909,context,Q1625433|Q653924,8,0,0.0,2026-10-02,"Known Risk of TdP, not a contraindication"
+qt_positives_separate,qt,P769,context,Q1625433|Q653924,8,0,0.0,2026-10-02,"Known Risk of TdP, not a contraindication"
+panel_33,g6pd,P10946,primary,Q848343,33,0,0.0,2026-10-02,
+wikidata_atc_items,g6pd,P10946,primary,Q848343,3763,0,0.0,2026-10-02,"items with P267, truthy statements"
+panel_33,g6pd,P1909,context,Q848343,33,0,0.0,2026-10-02,
+wikidata_atc_items,g6pd,P1909,context,Q848343,3763,0,0.0,2026-10-02,"items with P267, truthy statements"
+panel_33,g6pd,P769,context,Q848343,33,0,0.0,2026-10-02,
+wikidata_atc_items,g6pd,P769,context,Q848343,3763,0,0.0,2026-10-02,"items with P267, truthy statements"
+panel_33,teratogenicity,P10946,primary,Q11995,33,0,0.0,2026-10-02,
+wikidata_atc_items,teratogenicity,P10946,primary,Q11995,3763,0,0.0,2026-10-02,"items with P267, truthy statements"
+panel_33,teratogenicity,P3489,primary,any,33,27,0.8182,2026-10-02,
+wikidata_atc_items,teratogenicity,P3489,primary,any,3763,960,0.2551,2026-10-02,"items with P267, truthy statements"
+panel_33,teratogenicity,P1909,context,Q11995,33,0,0.0,2026-10-02,
+wikidata_atc_items,teratogenicity,P1909,context,Q11995,3763,0,0.0,2026-10-02,"items with P267, truthy statements"
+panel_33,teratogenicity,P769,context,Q11995,33,0,0.0,2026-10-02,
+wikidata_atc_items,teratogenicity,P769,context,Q11995,3763,0,0.0,2026-10-02,"items with P267, truthy statements"
+panel_33,qt,P10946,primary,Q1625433|Q653924,33,0,0.0,2026-10-02,
+wikidata_atc_items,qt,P10946,primary,Q1625433|Q653924,3763,0,0.0,2026-10-02,"items with P267, truthy statements"
+panel_33,qt,P1909,context,Q1625433|Q653924,33,0,0.0,2026-10-02,
+wikidata_atc_items,qt,P1909,context,Q1625433|Q653924,3763,0,0.0,2026-10-02,"items with P267, truthy statements"
+panel_33,qt,P769,context,Q1625433|Q653924,33,0,0.0,2026-10-02,
+wikidata_atc_items,qt,P769,context,Q1625433|Q653924,3763,0,0.0,2026-10-02,"items with P267, truthy statements"
+panel_33,any,P1909,property_overall,any,33,0,0.0,2026-10-02,
+wikidata_atc_items,any,P1909,property_overall,any,3763,13,0.0035,2026-10-02,"items with P267, truthy statements"
+panel_33,any,P769,property_overall,any,33,13,0.3939,2026-10-02,
+wikidata_atc_items,any,P769,property_overall,any,3763,440,0.1169,2026-10-02,"items with P267, truthy statements"
+panel_33,any,P3489,property_overall,any,33,27,0.8182,2026-10-02,
+wikidata_atc_items,any,P3489,property_overall,any,3763,960,0.2551,2026-10-02,"items with P267, truthy statements"
+panel_33,any,P10946,property_overall,any,33,0,0.0,2026-10-02,
+wikidata_atc_items,any,P10946,property_overall,any,3763,1,0.0003,2026-10-02,"items with P267, truthy statements"
+panel_33,any,P267,property_overall,any,33,32,0.9697,2026-10-02,
+wikidata_atc_items,any,P267,property_overall,any,3763,3763,1.0,2026-10-02,"items with P267, truthy statements"
+wikidata_statements,any,P1909,property_overall,any,,132,,2026-10-02,"unit: p: statements on all items, not distinct items"
+wikidata_statements,any,P769,property_overall,any,,20034,,2026-10-02,"unit: p: statements on all items, not distinct items"
+wikidata_statements,any,P3489,property_overall,any,,1544,,2026-10-02,"unit: p: statements on all items, not distinct items"
+wikidata_statements,any,P10946,property_overall,any,,12,,2026-10-02,"unit: p: statements on all items, not distinct items"

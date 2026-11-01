@@ -1,0 +1,6 @@
+language,domain,n_cells,n_exact_agree,pct_exact_agree,weighted_kappa,n_keyword_lower,n_keyword_higher,n_llm_mentions_keyword_zero
+en,g6pd,8,7,87.5,0.875,1,0,0
+he,g6pd,6,2,33.3,0.0,4,0,0
+ar,g6pd,7,4,57.1,0.618,3,0,1
+ru,g6pd,3,1,33.3,0.0,2,0,2
+all,g6pd,24,14,58.3,0.533,10,0,3
